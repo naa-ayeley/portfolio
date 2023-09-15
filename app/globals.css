@@ -26,6 +26,14 @@ body {
 
 }
 
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.roxborough {
+  font-family: "Roxborough_CF", serif;
+}
+
 .slide-menu {
   width: 100vw;
   height: 100vh;
