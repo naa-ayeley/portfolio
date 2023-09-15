@@ -13,3 +13,5 @@ export function getInitials(name: string) {
   const last = split[split.length - 1]
   return first[0] + last[0]
 }
+
+export const getCurrentYear = () => new Date().getFullYear()

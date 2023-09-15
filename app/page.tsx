@@ -1,14 +1,15 @@
 // import Image from 'next/image';
 import React from 'react';
 import WelcomeModal from '@/components/modals/welcome-modal';
+import Footer from '@/components/navigation/footer';
 
 export default function Home() {
   return (
-    <main className="font-medium text-5xl">
+    <div className="">
       <WelcomeModal />
       <section className=''>
 
       </section>
-    </main>
+    </div>
   );
 }

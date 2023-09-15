@@ -31,9 +31,9 @@ export default function Navbar() {
     }
 
     return (
-        <section className='w-full'>
+        <section className='w-full container max-sm:px-4 mx-auto'>
             {/* Desktop */}
-            <header className="p-4 md:flex hidden items-center gap-8 justify-between ">
+            <header className="py-4 md:flex hidden items-center gap-8 justify-between ">
                 <Link href='/'>
                     <Image src="/images/logos/logo.svg" alt="Logo" width={190} height={40} />
                 </Link>
