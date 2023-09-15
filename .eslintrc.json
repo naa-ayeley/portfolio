@@ -1,6 +1,23 @@
 {
-  "extends": ["next/core-web-vitals", "airbnb", "airbnb/hooks", "airbnb-typescript"],
+  "extends": [
+    "next/core-web-vitals"
+    // "airbnb", 
+    // "airbnb/hooks", 
+    // "airbnb-typescript"
+  ],
   "parserOptions": {
      "project": "./tsconfig.json"
-  }
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error", {
+         "devDependencies": true
+      }
+  ],
+  "no-tabs": "off"
+   
+
+  },
+  "plugins": ["import"]
+
 }
