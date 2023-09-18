@@ -19,11 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=''>
+      <body className='flex flex-col'>
 
         <ModalProvider />
         <Navbar />
-        <main className='container text-[#484A56] mx-auto min-h-[50vh]'>
+        <main className='container flex flex-col text-[#484A56] mx-auto '>
 
           {children}
         </main>
