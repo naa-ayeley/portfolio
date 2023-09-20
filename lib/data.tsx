@@ -115,3 +115,31 @@ export const projects: Projects = {
         },
     ]
 }
+
+export const experience = [
+    {
+        company: "Detosphere Limited",
+        role: "Product Designer",
+        date: "Oct 2022 - Present"
+    },
+    {
+        company: "Pay Up Limited",
+        role: "Design & Marketing",
+        date: "Mar 2021 - Present"
+    },
+    {
+        company: "Rent Ease (startup)",
+        role: "Design Lead",
+        date: "Jan 2022 - April 2022"
+    },
+    {
+        company: "Stanbic Bank",
+        role: "Marketing Assistant (National Service)",
+        date: "Oct 2020 - Jul 2021"
+    },
+    {
+        company: "Stanbic Bank",
+        role: "Marketing and Communications (Intern)",
+        date: "July 2018 - Aug 2018"
+    },
+]
