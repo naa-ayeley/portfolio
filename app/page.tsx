@@ -1,12 +1,14 @@
 // import Image from 'next/image';
 import React from 'react';
 import WelcomeModal from '@/components/modals/welcome-modal';
-import Footer from '@/components/navigation/footer';
 import Link from 'next/link';
 import { BEHANCE_URL, LINKEDIN_URL, TWITTER_URL } from '@/lib/constants';
 import { FaBehance, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 import { SlMouse } from 'react-icons/sl';
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi2';
+import Heading from '@/components/heading';
+import { projects } from '@/lib/data';
+import ProjectCard from '@/components/cards/project-card';
 
 export default function Home() {
   return (
@@ -46,6 +48,58 @@ export default function Home() {
             <HiOutlineChevronDoubleDown />
           </div>
           <p className='text-sm text-bluey font-light '>Scroll Down</p>
+        </div>
+      </section>
+      <section className='flex pt-16 flex-col gap-4'>
+        <Heading
+          title='Web Designs'
+          sub='Selected Projects'
+        />
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
+          {
+            projects.web.map((project) => (
+              <ProjectCard key={project.title} variant="web" project={project} />
+            ))
+          }
+        </div>
+      </section>
+      <section className='flex pt-16 flex-col gap-4'>
+        <Heading
+          title='Mobile Designs'
+          sub='Selected Projects'
+        />
+        <div className='grid md:grid-cols-2  gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
+          {
+            projects.mobile.map((project) => (
+              <ProjectCard key={project.title} variant="mobile" project={project} />
+            ))
+          }
+        </div>
+      </section>
+      <section className='flex pt-16 flex-col gap-4'>
+        <Heading
+          title='Product Designs'
+          sub='Selected Projects'
+        />
+        <div className='grid md:grid-cols-2  gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
+          {
+            projects.product.map((project) => (
+              <ProjectCard key={project.title} variant="product" project={project} />
+            ))
+          }
+        </div>
+      </section>
+      <section className='flex pt-16 flex-col gap-4'>
+        <Heading
+          title='Case Studies'
+          sub='Selected Projects'
+        />
+        <div className='grid md:grid-cols-2  gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
+          {
+            projects.studies.map((project) => (
+              <ProjectCard key={project.title} variant="studies" project={project} />
+            ))
+          }
         </div>
       </section>
     </>
