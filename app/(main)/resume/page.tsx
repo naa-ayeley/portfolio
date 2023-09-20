@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import Heading from '@/components/heading'
 import { experience } from '@/lib/data'
 import BlueLink from '@/components/blue-link'
