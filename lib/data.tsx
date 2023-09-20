@@ -1,4 +1,4 @@
-import { Navlink, Projects } from "@/types";
+import { Experience, Expertise, Navlink, Personality, Projects, Testimonial } from "@/types";
 
 export const navlinks: Navlink[] = [
     {
@@ -116,7 +116,7 @@ export const projects: Projects = {
     ]
 }
 
-export const experience = [
+export const experience: Experience[] = [
     {
         company: "Detosphere Limited",
         role: "Product Designer",
@@ -141,5 +141,65 @@ export const experience = [
         company: "Stanbic Bank",
         role: "Marketing and Communications (Intern)",
         date: "July 2018 - Aug 2018"
+    },
+]
+
+export const personality: Personality[] = [
+    {
+        title: "The Aquarius",
+        img: "/images/vectors/aquarius.svg",
+        desc: "I am a high achiever who can direct my strong instincts and incredible energy into doing meaningful work. I am driven, ambitious and eager to acquire results with my great work ethic and innate skills."
+    },
+    {
+        title: "The creative visionary",
+        img: "/images/vectors/creative.svg",
+        desc: "I am very particular and detail oriented about content. Envisioning the possibility of things and using my creativity to make them happen in ways that I can is what I do for a living."
+    },
+    {
+        title: "The Empath",
+        img: "/images/vectors/empath.svg",
+        desc: "I am empathetic towards the experiences and feelings of others outside my perspective. I advocate for social justice and believe in education geared towards emancipation from abuse, poverty, inequality, gender roles, and injustices aimed at discrimination, especially against women.",
+        colspan: true
+    },
+]
+
+export const expertise: Expertise[] = [
+    {
+        icon: "/images/icons/evaluative.svg",
+        title: "Evaluative",
+        description: "Market & User Research, Competitive Analysis, User Interviews, Surveys, Heuristic Evaluation, Usability Testing & Evaluation, UX Audits"
+    },
+    {
+        icon: "/images/icons/generative.svg",
+        title: "Generative",
+        description: `Empathy Mapping, Personas, Storyboarding, Affinity Mapping, Wireframing and iteration, Journey Mapping, Low and high fidelity prototyping`
+    },
+    {
+        icon: "/images/icons/design.svg",
+        title: "Design",
+        description: `Design Thinking, UI/UX Design, Visual Design and style guides, Interaction Design, Product Design, System Design, Service Design, Design Consultation`
+    },
+    {
+        icon: "/images/icons/management.svg",
+        title: "Management",
+        description: `Product Management & strategy, Social Media Management, Web Content Management, Digital Marketing and Branding/Brand Strategy, Social Media and SEO, Copy and Content Writing`
+    },
+]
+
+export const testimonials: Testimonial[] = [
+    {
+        name: "Ummul-Khair Zurak",
+        role: "Software Developer",
+        test: `She has a solid understanding of design principles and is eager to learn and stay updated. She is also very receptive to feedback and willing to incorporate suggestions into her designs.`
+    },
+    {
+        name: "M.Afadzinu, Exec.Head Brand &",
+        role: "Marketing- Stanbic Bank Ghana",
+        test: `I can certainly affirm that Naa Ayeley is an excellent prospect, and I have enjoyed the privilege of a front row as she has blossomed both academically and professionally.`
+    },
+    {
+        name: "Nana Yaw Kunale",
+        role: "Chief Technical Officer, Detosphere",
+        test: `I love working with Naa. She's an amazing person first and a capable UI/UX Designer with impeccable work ethic. She may also, every once in a while, give you a protein bar or yoghurt :)  `
     },
 ]

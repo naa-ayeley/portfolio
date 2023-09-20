@@ -59,6 +59,10 @@ body {
   display: none;
 }
 
+.test-shadow {
+  box-shadow: 0px 0px 15px 1px rgba(94, 154, 243, 0.15);
+}
+
 
  
 @layer base {

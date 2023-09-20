@@ -22,3 +22,28 @@ export type Projects = {
     product: Project[]
     studies: Project[]
 }
+
+export type Personality = {
+    title: string
+    img: string
+    desc: string
+    colspan?: boolean
+}
+
+export type Experience = {
+    company: string
+    date: string
+    role: string
+}
+
+export type Expertise = {
+    icon: string
+    title: string
+    description: string
+}
+
+export type Testimonial = {
+    name: string
+    role: string
+    test: string
+}
