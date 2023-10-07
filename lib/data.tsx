@@ -1,5 +1,6 @@
 import ThengaBackground from "@/components/tabs/thenga/thenga-background";
-import { Experience, Expertise, Navlink, Personality, Projects, Testimonial } from "@/types";
+import ThengaUserPersonas from "@/components/tabs/thenga/thenga-user-personas";
+import { Experience, Expertise, Navlink, Personality, Projects, Testimonial, ThengaUserPersona } from "@/types";
 
 export const navlinks: Navlink[] = [
     {
@@ -215,7 +216,7 @@ export const tabViews = {
         {
             label: "User Personas & Journeys",
             value: "user-personas",
-            render: <></>
+            render: <ThengaUserPersonas />
     
         },
         {
@@ -250,3 +251,46 @@ export const tabViews = {
 
     ]
 }
+
+export const thengaUserPersonas: ThengaUserPersona[] = [
+    {
+        avatar: "/melissa.svg",
+        name: "Melissa",
+        about: "Melissa is a University of law student currently residing in Spintex, Accra. She is very reserved and loves to bake. Melissa is always ready to try new and exciting things and is a frequent online shopper who loves purchasing clothes, shoes and appliances to try new baking recipes. She usually shops on Instagram, Jumia and online shopping websites like Fashionova and PLT. She finds online shopping in Ghana pretty challenging but believes it could get better.",
+        age: "23",
+        status: "Single",
+        profession: "Student/Model",
+        hometown: "Togo",
+        frustrations: [
+            "I usually cannot pay with my mobile money on online shopping sites",
+            "Scam pages who request for payment before delivery ",
+            "Sometimes what I order is not what I receive.",
+            "Finding a page to buy items is frustrating enough to close the app."
+        ],
+        goals: [
+            "Needs a platform with a variety of payment options",
+            "To spend less time looking for an item to buy",
+            "Honest Vendors",
+            "Helpful Customer Service"
+        ]
+    },
+    {
+        avatar: "/norbet.svg",
+        name: "Norbet",
+        about: "Norbet is a Project Manager who enjoys working very much. He is dedicated to his family and work and enjoys spending the weekends with his friends. Norbet doesn't frequently shop unless necessary; however, he does try to shop from authentic sites. He doesn't use Instagram, Facebook etc, to shop because he doesn't believe in the authenticity of the products, and he feels they are overpriced. He also has no time to visit physical shops if he isn't shopping for groceries and finds it hard when looking for specific items like electronics in these stores.",
+        age: "34",
+        status: "Single",
+        profession: "Project Manager",
+        hometown: "Ho",
+        frustrations: [
+            "Shipping costs and time",
+            "I usually can't track my order, or the order tracking isn't updated ",
+            "Lots of miscommunications",
+            "A lot of these vendors are not honest with the products they sell"
+        ],
+        goals: [
+            "Real-time shopping experience, e.g. direct communication with vendors, tracking orders, text messages or notifications on orders and delivery. I also want to be able to make bulk purchases.",
+            "Frequently updated websites/Shopping portals",
+        ]
+    },
+]

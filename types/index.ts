@@ -47,3 +47,15 @@ export type Testimonial = {
     role: string
     test: string
 }
+
+export type ThengaUserPersona = {
+    avatar: string
+    name: string
+    about: string
+    age: string
+    status: string
+    profession: string
+    hometown: string
+    frustrations: string[]
+    goals: string[]
+}
