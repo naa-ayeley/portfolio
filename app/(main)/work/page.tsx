@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '@/components/heading';
+import Heading from '@/components/hierarchy/heading';
 import { projects } from '@/lib/data';
 import ProjectCard from '@/components/cards/project-card';
 

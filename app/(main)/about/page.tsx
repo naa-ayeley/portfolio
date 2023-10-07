@@ -1,7 +1,7 @@
 import BlueLink from '@/components/blue-link'
 import PersonalityCard from '@/components/cards/personality-card'
 import TestimonialCard from '@/components/cards/testimonial-card'
-import Heading from '@/components/heading'
+import Heading from '@/components/hierarchy/heading'
 import { OWNER } from '@/lib/constants'
 import { expertise, personality, testimonials } from '@/lib/data'
 import Image from 'next/image'

@@ -1,3 +1,4 @@
+import ThengaBackground from "@/components/tabs/thenga/thenga-background";
 import { Experience, Expertise, Navlink, Personality, Projects, Testimonial } from "@/types";
 
 export const navlinks: Navlink[] = [
@@ -109,7 +110,7 @@ export const projects: Projects = {
         {
             title: "Resto Restaurant Booking & Pre-order",
             img: "/images/mockups/resto-case.svg",
-            link: "/work/thenga",
+            link: "/work/resto-restaurant",
             sub: "UI/UX Case Study",
             tags: ["User Research","UX Design", "Usability Testing" ]
         },
@@ -203,3 +204,49 @@ export const testimonials: Testimonial[] = [
         test: `I love working with Naa. She's an amazing person first and a capable UI/UX Designer with impeccable work ethic. She may also, every once in a while, give you a protein bar or yoghurt :)  `
     },
 ]
+
+export const tabViews = {
+    thenga: [
+        {
+            label: "Background",
+            value: "background",
+            render: <ThengaBackground />
+        },
+        {
+            label: "User Personas & Journeys",
+            value: "user-personas",
+            render: <></>
+    
+        },
+        {
+            label: "Information Architecture",
+            value: "info-arch",
+            render: <></>
+    
+        },
+        {
+            label: "User Flow",
+            value: "user-flow",
+            render: <></>
+    
+        },
+        {
+            label: "Wireframing",
+            value: "wireframing",
+            render: <></>
+    
+        },
+        {
+            label: "Style Guide",
+            value: "style-guide",
+            render: <></>
+    
+        },
+    ],
+    seemini: [
+
+    ],
+    resto: [
+
+    ]
+}

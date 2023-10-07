@@ -6,7 +6,7 @@ import { BEHANCE_URL, LINKEDIN_URL, TWITTER_URL } from '@/lib/constants';
 import { FaBehance, FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
 import { SlMouse } from 'react-icons/sl';
 import { HiOutlineChevronDoubleDown } from 'react-icons/hi2';
-import Heading from '@/components/heading';
+import Heading from '@/components/hierarchy/heading';
 import { projects } from '@/lib/data';
 import ProjectCard from '@/components/cards/project-card';
 

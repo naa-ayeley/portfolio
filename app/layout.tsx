@@ -7,7 +7,7 @@ import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
 
 export const metadata: Metadata = {
-  title: `${OWNER} | Home`,
+  title: `Home | ${OWNER}`,
   description: `A portfolio website for UI/UX Designer, ${OWNER}`,
   icons: { icon: '/images/logos/favicon.ico' }
 };
