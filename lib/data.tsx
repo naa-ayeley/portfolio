@@ -1,4 +1,6 @@
 import ThengaBackground from "@/components/tabs/thenga/thenga-background";
+import ThengaInfotecture from "@/components/tabs/thenga/thenga-infotecture";
+import ThengaUserFlow from "@/components/tabs/thenga/thenga-user-flow";
 import ThengaUserPersonas from "@/components/tabs/thenga/thenga-user-personas";
 import { Experience, Expertise, Navlink, Personality, Projects, Testimonial, ThengaUserPersona } from "@/types";
 
@@ -222,13 +224,13 @@ export const tabViews = {
         {
             label: "Information Architecture",
             value: "info-arch",
-            render: <></>
+            render: <ThengaInfotecture />
     
         },
         {
             label: "User Flow",
             value: "user-flow",
-            render: <></>
+            render: <ThengaUserFlow />
     
         },
         {
