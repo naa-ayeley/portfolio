@@ -2,6 +2,9 @@ import ThengaBackground from "@/components/tabs/thenga/thenga-background";
 import ThengaInfotecture from "@/components/tabs/thenga/thenga-infotecture";
 import ThengaUserFlow from "@/components/tabs/thenga/thenga-user-flow";
 import ThengaUserPersonas from "@/components/tabs/thenga/thenga-user-personas";
+import ThengaWebWireframing from "@/components/tabs/thenga/wireframing/thenga-web-wireframing";
+import ThengaExtensionWireframing from "@/components/tabs/thenga/wireframing/thenga-extension-wireframing";
+import ThengaWireframing from "@/components/tabs/thenga/wireframing/thenga-wireframing";
 import { Experience, Expertise, Navlink, Personality, Projects, Testimonial, ThengaUserPersona } from "@/types";
 
 export const navlinks: Navlink[] = [
@@ -236,7 +239,7 @@ export const tabViews = {
         {
             label: "Wireframing",
             value: "wireframing",
-            render: <></>
+            render: <ThengaWireframing />
     
         },
         {
@@ -251,6 +254,50 @@ export const tabViews = {
     ],
     resto: [
 
+    ],
+    "thenga-wireframe": [
+        {
+            label: "Website Wireframes",
+            value: "website-wireframes",
+            render: <ThengaWebWireframing />
+        },
+        {
+            label: "Extension Wireframes",
+            value: "extension-wireframes",
+            render: <ThengaExtensionWireframing />
+        },
+    ]
+}
+
+export const thengaWireframing = {
+    web: [
+        {
+            title: "Lo-fi",
+            desc: `
+            These Lo-fi prototypes are just quick and simple versions of the final product. They were used to explore the possibilities of core functionalities, user flows and UI placements.`,
+            img: '/images/mockups/thenga-web-lofi.svg',
+            alt: "thenga web wireframing lofi"
+        },
+        {
+            title: "Visual ideation",
+            desc: `These Hi-fi prototypes are also quick and simple visual representations of my ideas. I focused more on exploring a variety of UI elements and placements to develop a cohesive and robust interface that meets user needs. AKA, my first draft.`,
+            img: '/images/mockups/thenga-web-hifi.svg',
+            alt: "thenga web wireframing hifi"
+        }
+    ],
+    extension: [
+        {
+            title: "Lo-fi",
+            desc: `These Lo-fi prototypes are just quick and simple versions of the final product. They were used to explore the possibilities of core functionalities, user flows and UI placements.`,
+            img: '/images/mockups/thenga-extension-lofi.svg',
+            alt: "thenga extension wireframing lofi"
+        },
+        {
+            title: "Visual ideation",
+            desc: `These Hi-fi prototypes are also quick and simple visual representations of my ideas. I focused more on exploring a variety of UI elements and placements to develop a cohesive and robust interface that meets user needs. AKA, my first draft.`,
+            img: '/images/mockups/thenga-extension-hifi.svg',
+            alt: "thenga extension wireframing hifi"
+        },
     ]
 }
 

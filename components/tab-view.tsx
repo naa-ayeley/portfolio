@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { tabViews } from "@/lib/data"
 
 interface TabViewProps {
-    data: "thenga" | "seemini" | "resto"
+    data: "thenga" | "seemini" | "resto" | "thenga-wireframe"
 }
 
 export default function TabView({ data }: TabViewProps) {
@@ -37,15 +37,15 @@ export default function TabView({ data }: TabViewProps) {
 
     return (
         <section className="w-full flex flex-col gap-4">
-            <Tabs defaultValue="background" className="w-full">
+            <Tabs defaultValue={views[0].value} className="w-full">
                 <div className="max-w-full relative w-full flex items-center px-[45px] justify-between overflow-x-auto hide-scroll">
                     {
                         showLeftIcon &&
-                        <div onClick={() => scroll("left")} className="border absolute left-0 z-10 bg-white cursor-pointer flex items-center justify-center rounded-full w-[45px] h-[45px] min-w-[45px] min-h-[45px]">
-                            <BsChevronLeft className="w-[24px] h-[24px] -translate-x-[2px]" />
+                        <div onClick={() => scroll("left")} className="border absolute left-0 z-10 bg-white cursor-pointer flex items-center justify-center rounded-full w-[40px] h-[40px] min-w-[40px] min-h-[45px]">
+                            <BsChevronLeft className="w-[20px] h-[20px] -translate-x-[2px]" />
                         </div>
                     }
-                    <TabsList className="gap-8 max-w-full overflow-x-auto justify-start   hide-scroll" ref={scrollRef} >
+                    <TabsList className="gap-8 max-w-full overflow-x-auto justify-start hide-scroll" ref={scrollRef} >
                         {
                             views.map((view) => (
                                 <TabsTrigger className="" value={view.value} key={view.value}>
@@ -56,13 +56,13 @@ export default function TabView({ data }: TabViewProps) {
                     </TabsList>
                     {
                         showRightIcon &&
-                        <div onClick={() => scroll("right")} className="border absolute right-0 z-10 bg-white cursor-pointer flex items-center justify-center rounded-full w-[45px] h-[45px] min-w-[45px] min-h-[45px]">
-                            <BsChevronRight className="w-[24px] h-[24px] translate-x-[2px]" />
+                        <div onClick={() => scroll("right")} className="border absolute right-0 z-10 bg-white cursor-pointer flex items-center justify-center rounded-full w-[40px] h-[40px] min-w-[40px] min-h-[40px]">
+                            <BsChevronRight className="w-[20px] h-[20px] translate-x-[2px]" />
                         </div>
                     }
                 </div>
                 {
-                    tabViews.thenga.map((view) => (
+                    views.map((view) => (
                         <TabsContent value={view.value} key={view.value}>
                             {view.render}
                         </TabsContent>
