@@ -10,6 +10,7 @@ import ThengaStyleGuide from "@/components/tabs/thenga/style-guide/thenga-style-
 import ThengaWebStyle from "@/components/tabs/thenga/style-guide/thenga-web-style";
 import ThengaExtensionStyle from "@/components/tabs/thenga/style-guide/thenga-extension-style";
 import InventoryDefine from "@/components/tabs/inventory/inventory-define";
+import InventoryResearch from "@/components/tabs/inventory/inventory-research";
 
 export const navlinks: Navlink[] = [
     {
@@ -262,7 +263,7 @@ export const tabViews = {
         {
             label: "Developing ideas",
             value: "ideas",
-            render: <></>
+            render: <InventoryResearch />
         },
         {
             label: "Visual clarity and direction",
