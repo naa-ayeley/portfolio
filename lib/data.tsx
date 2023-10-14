@@ -6,6 +6,9 @@ import ThengaWebWireframing from "@/components/tabs/thenga/wireframing/thenga-we
 import ThengaExtensionWireframing from "@/components/tabs/thenga/wireframing/thenga-extension-wireframing";
 import ThengaWireframing from "@/components/tabs/thenga/wireframing/thenga-wireframing";
 import { Experience, Expertise, Navlink, Personality, Projects, Testimonial, ThengaUserPersona } from "@/types";
+import ThengaStyleGuide from "@/components/tabs/thenga/style-guide/thenga-style-guide";
+import ThengaWebStyle from "@/components/tabs/thenga/style-guide/thenga-web-style";
+import ThengaExtensionStyle from "@/components/tabs/thenga/style-guide/thenga-extension-style";
 
 export const navlinks: Navlink[] = [
     {
@@ -245,7 +248,7 @@ export const tabViews = {
         {
             label: "Style Guide",
             value: "style-guide",
-            render: <></>
+            render: <ThengaStyleGuide />
     
         },
     ],
@@ -265,6 +268,18 @@ export const tabViews = {
             label: "Extension Wireframes",
             value: "extension-wireframes",
             render: <ThengaExtensionWireframing />
+        },
+    ],
+    "thenga-style": [
+        {
+            label: "Website Style Guide",
+            value: "website-style-guide",
+            render: <ThengaWebStyle />
+        },
+        {
+            label: "Extension Style Guide",
+            value: "extension-style-guide",
+            render: <ThengaExtensionStyle />
         },
     ]
 }

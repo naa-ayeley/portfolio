@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { tabViews } from "@/lib/data"
 
 interface TabViewProps {
-    data: "thenga" | "seemini" | "resto" | "thenga-wireframe"
+    data: "thenga" | "seemini" | "resto" | "thenga-wireframe" | "thenga-style"
 }
 
 export default function TabView({ data }: TabViewProps) {
