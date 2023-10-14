@@ -16,4 +16,7 @@ export const PROJECT_LINKS = {
         web: "https://www.figma.com/proto/WCcVmgb3kWYU8SsjyE3WUI/Thenga?page-id=639%3A2075&node-id=662-963&viewport=531%2C327%2C0.03&scaling=scale-down&starting-point-node-id=662%3A963&show-proto-sidebar=1&mode=design&t=7CcVLCdCnGQeqfqB-1",
         extension: "https://www.figma.com/proto/WCcVmgb3kWYU8SsjyE3WUI/Thenga?page-id=0%3A1&node-id=642-2077&viewport=295%2C421%2C0.03&scaling=contain&starting-point-node-id=642%3A2077&mode=design&t=aYMT2feWz7VY45A2-1"
     },
+    inventory: {
+        prototype: "https://www.figma.com/proto/KHNYuoO5LgwdDXmwQvDlvo/smartup-mobile?page-id=455%3A4197&type=design&node-id=955-3709&viewport=4998%2C-4232%2C0.23&t=lRktjEAcCBG0Pmun-1&scaling=scale-down&starting-point-node-id=955%3A4412&show-proto-sidebar=1&mode=design&fuid=1041726344395909298"
+    }
 }

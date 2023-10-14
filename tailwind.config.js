@@ -52,6 +52,8 @@ module.exports = {
         },
         bluey: "#5E9AF3",
         "seablue": "#6FA2EE",
+        "inventory": "#8778F7",
+        "resto": "#7B9F1D",
       },
       borderRadius: {
         lg: "var(--radius)",

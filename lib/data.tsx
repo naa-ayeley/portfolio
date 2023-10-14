@@ -9,6 +9,7 @@ import { Experience, Expertise, Navlink, Personality, Projects, Testimonial, The
 import ThengaStyleGuide from "@/components/tabs/thenga/style-guide/thenga-style-guide";
 import ThengaWebStyle from "@/components/tabs/thenga/style-guide/thenga-web-style";
 import ThengaExtensionStyle from "@/components/tabs/thenga/style-guide/thenga-extension-style";
+import InventoryDefine from "@/components/tabs/inventory/inventory-define";
 
 export const navlinks: Navlink[] = [
     {
@@ -100,12 +101,12 @@ export const projects: Projects = {
             tags: ["UI/UX Design", "Usability Testing" ]
         },
         {
-            title: "Fundraising and Gift registry",
-            img: "/images/mockups/gift-product.svg",
-            link: "/work/seemini",
-            altTitle: "Seemini Fundraising and Gift registry",
-            sub: "UX Case Study",
-            tags: ["UI/UX Design", "Usability Testing" ]
+            title: "Inventory Management Mobile App",
+            img: "/images/mockups/inventory-management.svg",
+            link: "/work/inventory-management",
+            altTitle: "Inventory Management App",
+            sub: "UX/UI Case Study",
+            tags: ["UI/UX Design", "Case Study" ]
         },
     ],
     studies: [
@@ -252,8 +253,32 @@ export const tabViews = {
     
         },
     ],
-    seemini: [
-
+    inventory: [
+        {
+            label: "Defining and Understanding",
+            value: "defining",
+            render: <InventoryDefine />
+        },
+        {
+            label: "Developing ideas",
+            value: "ideas",
+            render: <></>
+        },
+        {
+            label: "Visual clarity and direction",
+            value: "clarity",
+            render: <></>
+        },
+        {
+            label: "Approved design",
+            value: "design",
+            render: <></>
+        },
+        {
+            label: "Style Guide",
+            value: "guide",
+            render: <></>
+        },
     ],
     resto: [
 
@@ -357,4 +382,24 @@ export const thengaUserPersonas: ThengaUserPersona[] = [
             "Frequently updated websites/Shopping portals",
         ]
     },
+]
+
+export const inventoryGoals = [
+    {
+        bold: "Accessibility and convenience- ",
+        item: "some users prefer the idea of accessing their inventory data and performing specific functions through their phones due to it's convenience and portability."
+    },
+    {
+        bold: "Offline Access- ",
+        item: "some users preferred the idea of accessing their inventory data and performing specific functions offline or in low connectivity scenarios."
+    },
+    {
+        bold: "Brand Loyalty- ",
+        item: "creating a stronger sense of connection and loyalty with users by incorporating an app into their digital lives of customers serves as a wise and essential decision for the business. "
+    },
+    {
+        bold: "Competitive Advantage- ",
+        item: "Offering a well-designed and feature-rich mobile app can set the business apart from competitors and keep up with some of them."
+    },
+
 ]

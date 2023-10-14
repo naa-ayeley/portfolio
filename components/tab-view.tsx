@@ -3,12 +3,14 @@ import { useRef, useState } from "react"
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { tabViews } from "@/lib/data"
+import { cn } from "@/lib/utils"
 
 interface TabViewProps {
-    data: "thenga" | "seemini" | "resto" | "thenga-wireframe" | "thenga-style"
+    data: "thenga" | "inventory" | "resto" | "thenga-wireframe" | "thenga-style",
+    color?: "inventory" | "resto"
 }
 
-export default function TabView({ data }: TabViewProps) {
+export default function TabView({ data, color }: TabViewProps) {
     const views = tabViews[data]
 
     const [showRightIcon, setShowRightIcon] = useState(true)
@@ -48,7 +50,11 @@ export default function TabView({ data }: TabViewProps) {
                     <TabsList className="gap-8 max-w-full overflow-x-auto justify-start hide-scroll" ref={scrollRef} >
                         {
                             views.map((view) => (
-                                <TabsTrigger className="" value={view.value} key={view.value}>
+                                <TabsTrigger className={cn(
+                                    color === "resto" && "data-[state=active]:text-resto data-[state=active]:border-resto",
+                                    color === "inventory" && "data-[state=active]:text-inventory data-[state=active]:border-inventory",
+
+                                )} value={view.value} key={view.value}>
                                     {view.label}
                                 </TabsTrigger>
                             ))
