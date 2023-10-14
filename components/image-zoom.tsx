@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable */
 import Image from 'next/image'
 import Zoom from 'react-medium-image-zoom'
