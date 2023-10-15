@@ -1,16 +1,33 @@
-import ThengaBackground from "@/components/tabs/thenga/thenga-background";
-import ThengaInfotecture from "@/components/tabs/thenga/thenga-infotecture";
-import ThengaUserFlow from "@/components/tabs/thenga/thenga-user-flow";
-import ThengaUserPersonas from "@/components/tabs/thenga/thenga-user-personas";
-import ThengaWebWireframing from "@/components/tabs/thenga/wireframing/thenga-web-wireframing";
-import ThengaExtensionWireframing from "@/components/tabs/thenga/wireframing/thenga-extension-wireframing";
-import ThengaWireframing from "@/components/tabs/thenga/wireframing/thenga-wireframing";
-import { Experience, Expertise, Navlink, Personality, Projects, Testimonial, ThengaUserPersona } from "@/types";
-import ThengaStyleGuide from "@/components/tabs/thenga/style-guide/thenga-style-guide";
-import ThengaWebStyle from "@/components/tabs/thenga/style-guide/thenga-web-style";
-import ThengaExtensionStyle from "@/components/tabs/thenga/style-guide/thenga-extension-style";
-import InventoryDefine from "@/components/tabs/inventory/inventory-define";
-import InventoryResearch from "@/components/tabs/inventory/inventory-research";
+import {
+    Experience,
+    Expertise,
+    Navlink,
+    Personality,
+    Projects,
+    Testimonial,
+    ThengaUserPersona
+} from "@/types";
+
+import {
+    InventoryDefine,
+    InventoryResearch,
+    InventoryClarity,
+    InventoryDesign,
+    InventoryStyle
+} from "@/components/tabs/inventory"
+
+import {
+    ThengaWireframing,
+    ThengaExtensionWireframing,
+    ThengaWebWireframing,
+    ThengaUserPersonas,
+    ThengaUserFlow,
+    ThengaInfotecture,
+    ThengaBackground,
+    ThengaExtensionStyle,
+    ThengaWebStyle,
+    ThengaStyleGuide
+} from "@/components/tabs/thenga";
 
 export const navlinks: Navlink[] = [
     {
@@ -34,7 +51,7 @@ export const navlinks: Navlink[] = [
                 href: "/work#case-studies"
             },
         ]
-    }, 
+    },
     {
         name: "Resume",
         href: "/resume",
@@ -99,7 +116,7 @@ export const projects: Projects = {
             sub: "Usability Test Report",
             altTitle: "Leads Management",
             link: "/work/leads-management",
-            tags: ["UI/UX Design", "Usability Testing" ]
+            tags: ["UI/UX Design", "Usability Testing"]
         },
         {
             title: "Inventory Management Mobile App",
@@ -107,7 +124,7 @@ export const projects: Projects = {
             link: "/work/inventory-management",
             altTitle: "Inventory Management App",
             sub: "UX/UI Case Study",
-            tags: ["UI/UX Design", "Case Study" ]
+            tags: ["UI/UX Design", "Case Study"]
         },
     ],
     studies: [
@@ -116,14 +133,14 @@ export const projects: Projects = {
             img: "/images/mockups/thenga-case.svg",
             link: "/work/thenga",
             sub: "UI/UX Case Study",
-            tags: ["UI/UX Design" ]
+            tags: ["UI/UX Design"]
         },
         {
             title: "Resto Restaurant Booking & Pre-order",
             img: "/images/mockups/resto-case.svg",
             link: "/work/resto-restaurant",
             sub: "UI/UX Case Study",
-            tags: ["User Research","UX Design", "Usability Testing" ]
+            tags: ["User Research", "UX Design", "Usability Testing"]
         },
     ]
 }
@@ -227,31 +244,31 @@ export const tabViews = {
             label: "User Personas & Journeys",
             value: "user-personas",
             render: <ThengaUserPersonas />
-    
+
         },
         {
             label: "Information Architecture",
             value: "info-arch",
             render: <ThengaInfotecture />
-    
+
         },
         {
             label: "User Flow",
             value: "user-flow",
             render: <ThengaUserFlow />
-    
+
         },
         {
             label: "Wireframing",
             value: "wireframing",
             render: <ThengaWireframing />
-    
+
         },
         {
             label: "Style Guide",
             value: "style-guide",
             render: <ThengaStyleGuide />
-    
+
         },
     ],
     inventory: [
@@ -268,17 +285,17 @@ export const tabViews = {
         {
             label: "Visual clarity and direction",
             value: "clarity",
-            render: <></>
+            render: <InventoryClarity />
         },
         {
             label: "Approved design",
             value: "design",
-            render: <></>
+            render: <InventoryDesign />
         },
         {
             label: "Style Guide",
             value: "guide",
-            render: <></>
+            render: <InventoryStyle />
         },
     ],
     resto: [
