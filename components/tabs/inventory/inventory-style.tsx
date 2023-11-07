@@ -1,6 +1,17 @@
 import SingleColorAltCard, { ColorCardProps } from "@/components/cards/color/single-color-alt-card";
 import { Subheading } from "@/components/hierarchy";
 import Image from "next/image";
+import {
+    Table,
+    TableBody,
+    TableCaption,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from "@/components/ui/table"
+import ImageZoom from "@/components/image-zoom";
+
 
 
 const palette: ColorCardProps[] = [
@@ -70,6 +81,39 @@ const palette: ColorCardProps[] = [
     },
 ]
 
+const hierarchy = [
+    {
+        isBold: true,
+        textType: "Onboarding Heading",
+        weight: "Bold",
+        fontSize: "25.00px"
+    },
+    {
+        isBold: false,
+        textType: "Heading",
+        weight: "Medium",
+        fontSize: "21.00px"
+    },
+    {
+        isBold: false,
+        textType: "Heading",
+        weight: "Medium/Regular",
+        fontSize: "15.00px"
+    },
+    {
+        isBold: false,
+        textType: "Body Text",
+        weight: "Regular",
+        fontSize: "12.00px"
+    },
+    {
+        isBold: false,
+        textType: "Body Text",
+        weight: "Regular",
+        fontSize: "10.00px"
+    },
+]
+
 export default function InventoryStyle() {
     return (
         <section className="flex py-8 flex-col gap-8" >
@@ -118,14 +162,14 @@ export default function InventoryStyle() {
                                 <div className="flex flex-col inter gap-">
                                     <div className="flex gap-4 items-center justify-between">
                                         <p className="font-medium text-black">
-                                        Smartup Retail Inventory 
+                                            Smartup Retail Inventory
                                         </p>
                                         <p className="text-xs text-neutral-400">
-                                           3m ago 
+                                            3m ago
                                         </p>
                                     </div>
                                     <p className="text-sm">
-                                    Track your inventory, sales, staff and more with your Smartup retail inventory management app.
+                                        Track your inventory, sales, staff and more with your Smartup retail inventory management app.
                                     </p>
                                 </div>
                             </article>
@@ -137,14 +181,14 @@ export default function InventoryStyle() {
                                 <div className="flex flex-col inter gap-">
                                     <div className="flex gap-4 items-center justify-between">
                                         <p className="font-medium text-black">
-                                        Transfer Requests
+                                            Transfer Requests
                                         </p>
                                         <p className="text-xs text-neutral-400">
-                                           3m ago 
+                                            3m ago
                                         </p>
                                     </div>
                                     <p className="text-sm">
-                                    You have a transfer request from Agbogba branch. Open your app to accept or decline.
+                                        You have a transfer request from Agbogba branch. Open your app to accept or decline.
                                     </p>
                                 </div>
                             </article>
@@ -156,14 +200,14 @@ export default function InventoryStyle() {
                                 <div className="flex flex-col inter gap-">
                                     <div className="flex gap-4 items-center justify-between">
                                         <p className="font-medium text-black">
-                                        Transfer Requests 
+                                            Transfer Requests
                                         </p>
                                         <p className="text-xs text-neutral-400">
-                                           3m ago 
+                                            3m ago
                                         </p>
                                     </div>
                                     <p className="text-sm">
-                                    You still have pending transfer requests from Agbogba branch. Open your app to accept or decline.
+                                        You still have pending transfer requests from Agbogba branch. Open your app to accept or decline.
                                     </p>
                                 </div>
                             </article>
@@ -171,13 +215,13 @@ export default function InventoryStyle() {
 
                     </div>
                     <div className="w-full   relative aspect-[9/16]">
-                    <Image src="/images/mockups/inv-notif.svg" alt="smartup logo" fill className="phone" />
+                        <Image src="/images/mockups/inv-notif.svg" alt="smartup logo" fill className="phone" />
                     </div>
                 </div>
             </div>
             <div className="flex flex-col gap-4 mt-10">
                 <p className="text-lg font-medium">Typography</p>
-                
+
                 <div className=" w-full  max-w-screen  items-center albert min-h-[100px] max-h-[120px] gap-4 overflow-hidden  absolute left-0 mt-10 leading-[120px] text-[50px] md:text-[80px] lg:text-[100px] font-light">
                     <span className=" text-[#d9d9d9] mr-8">
                         bert Sans
@@ -185,25 +229,88 @@ export default function InventoryStyle() {
 
                     <span>
 
-                    Albert Sans
-                    </span> 
-                    
+                        Albert Sans
+                    </span>
+
                     <span className="  text-[#d9d9d9] ml-8 ">
                         Albert Sans
                     </span>
-                    
-                   
+
+
                 </div>
                 <div className="min-h-[120px]">
-                    
+
                 </div>
                 <p>
-                The choice of &apos;Albert Sans&apos; was deliberate and driven by my desire to achieve a clean, modern, and legible design that fits perfectly with the project&apos;s objectives. I wanted to use a font that was modern, versatile and legible across various screen sizes and resolutions while also creating a sense of professionalism. Ialso avoided the use of absolute blacks to prevent eye strains.
+                    The choice of &apos;Albert Sans&apos; was deliberate and driven by my desire to achieve a clean, modern, and legible design that fits perfectly with the project&apos;s objectives. I wanted to use a font that was modern, versatile and legible across various screen sizes and resolutions while also creating a sense of professionalism. Ialso avoided the use of absolute blacks to prevent eye strains.
                 </p>
 
-                <p className="">
+                <p className="text-lg font-medium text-[#8778F7] mt-20">Hierarchy</p>
+                <Table className="max-w-xl albert">
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead className="">Text Type</TableHead>
+                            <TableHead>Weight</TableHead>
+                            <TableHead>Font Size</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {
+                            hierarchy.map((h, i) => (
+                                <TableRow key={i}>
+                                    <TableCell className={h.isBold ? "font-bold" : ""}> {h.textType} </TableCell>
+                                    <TableCell className={h.isBold ? "font-bold" : ""}> {h.weight} </TableCell>
+                                    <TableCell className={h.isBold ? "font-bold" : ""}> {h.fontSize} </TableCell>
+                                </TableRow>
+                            ))
+                        }
 
-                </p>
+                    </TableBody>
+                </Table>
+
+                <div className="mt-10 ">
+                    <p className="text-lg font-medium ">Icons</p>
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2">
+                        <ImageZoom alt="icons" src="/images/mockups/inv-icons-1.svg" />
+                        <ImageZoom alt="icons" src="/images/mockups/inv-icons-2.svg" />
+                    </div>
+                </div>
+                <div className="mt-20 ">
+                    <div className="w-full grid grid-cols-1 gap-8 md:grid-cols-[1fr_.75fr]">
+                        <div className="flex flex-col gap-4">
+                            <p className="text-lg font-medium ">Border radius</p>
+                            <ImageZoom alt="icons" src="/images/mockups/inv-radius.svg" />
+
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <p className="text-lg font-medium ">Elevation</p>
+                            <p className="text-sm">
+                                Most cards are elevated to show that they are clickable
+                            </p>
+                            <ImageZoom alt="icons" src="/images/mockups/inv-elevate.svg" />
+
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-20 flex flex-col gap-4">
+                    <p className="text-lg font-medium ">Buttons</p>
+                    <ImageZoom alt="icons" src="/images/mockups/inv-buttons.svg" />
+                </div>
+                <div className="mt-20 ">
+                    <div className="w-full grid grid-cols-1 gap-8 md:grid-cols-2">
+                        <div className="flex flex-col gap-4">
+                            <p className="text-lg font-medium ">Navigations</p>
+                            <ImageZoom alt="icons" src="/images/mockups/inv-nav.svg" />
+
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <p className="text-lg font-medium ">Radio Buttons</p>
+                            
+                            <ImageZoom alt="icons" src="/images/mockups/inv-rb.svg" />
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )
