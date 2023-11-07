@@ -13,7 +13,7 @@ import ProjectCard from '@/components/cards/project-card';
 export default function Home() {
   return (
     <>
-      <WelcomeModal />
+      {/* <WelcomeModal /> */}
       <section className='min-h-[80vh] relative flex flex-col items-center justify-center p-4'>
         <div className='flex flex-col justify-center max-w-5xl  items-center text-center gap-4'>
           <p className='text-xl md:text-2xl font-light'>Hiya 👋🏾</p>
