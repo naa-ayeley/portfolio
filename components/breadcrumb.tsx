@@ -9,7 +9,7 @@ export default function Breadcrumb() {
     const paths = pathname.split("/")
     const lastPath = paths[-1]
     const isResto = lastPath === "resto-restaurant"
-    const isInventory = "inventory-management"
+    const isInventory = lastPath === "inventory-management"
 
     
     
