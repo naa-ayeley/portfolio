@@ -7,10 +7,11 @@ import { usePathname } from 'next/navigation'
 export default function Breadcrumb() {
     const pathname = usePathname()
     const paths = pathname.split("/")
-    const lastPath = paths[-1]
-    const isResto = lastPath === "resto-restaurant"
-    const isInventory = lastPath === "inventory-management"
+    const lastPath = paths[paths.length - 1]
+    const isResto = lastPath && lastPath === "resto-restaurant"
+    const isInventory = lastPath && lastPath === "inventory-management"
 
+    
     
     
     return (
