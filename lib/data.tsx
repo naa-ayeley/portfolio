@@ -421,3 +421,178 @@ export const inventoryGoals = [
     },
 
 ]
+
+export const leadsSummary: string[] = [
+    `66% fulfilled all goals easily and 34% didn't.`,
+    `100% found the various functions and processes of the product logical and usable.`,
+    `17% found the product unnecessarily complex`,
+    `100% felt they would recommend the product to others.`,
+
+]
+
+export const leadsScript = [
+    {
+        title: "Prompt 1:",
+        description: " Sign up to Leads and meticulously go through the interface you see (the overview page)."
+    },
+    {
+        title: "Prompt 1 Follow-Up: ",
+        description: "How do you feel about what you see? Do you understand what you see? How do you feel about the interface?"
+    },
+    {
+        title: "Prompt 2: ",
+        description: "Create a contact. After you create a contact, initiate a pipeline, create a task and turn the contact into a lead."
+    },
+    {
+        title: "Prompt 2 Follow-Up: ",
+        description: "How easy do you feel it is complete this task? What was easy, and what was challenging?"
+    },
+    {
+        title: "Prompt 3: ",
+        description: "Now that you have turned a contact into a lead, go through the interface you see (the lead-contact card) and interact with features you are interested in."
+    },
+    {
+        title: "Prompt 3 Follow-Up 1: ",
+        description: "What did you interact with first? How do you feel about the interface and user flow? Do you understand what you see? Was anything incomprehensible?"
+    },
+    {
+        title: "Prompt 4: ",
+        description: "Within the Lead-contact interface, edit a lead and try to leave a lead score."
+    },
+    {
+        title: "Prompt 4 Follow-Up: ",
+        description: "How do you feel about the process? Was it easy to find and navigate?"
+    },
+    {
+        title: "Prompt 5: ",
+        description: "Now that you are done exploring the main features of the product, you are free to explore any other options."
+    },
+    {
+        title: "Prompt 5 Follow-Up: ",
+        description: "What did you interact with first? Any reason for that? How do you feel about it?"
+    },
+]
+
+export const leadsResearch = [
+    {
+        title: "a)",
+        description: `By your first glance, did you get what the product offers?`
+    },
+    {
+        title: "b)",
+        description: `How do you feel about the overall experience?`
+    },
+    {
+        title: "c)",
+        description: `Did you reach any of the goals assigned to you?`
+    },
+    {
+        title: "d)",
+        description: `Did you face any challenges? Do you feel like it was difficult to use and navigate?`
+    },
+    {
+        title: "e)",
+        description: `What other comments do you have? Do you have any suggestions for improvement?`
+    },
+]
+
+export const leadsParticipants = [
+    {
+        title: "a)",
+        description: `All participants were business, marketing and sales professionals.`
+    },
+    {
+        title: "b)",
+        description: `Participants were people between the ages of 22-40 with a relatively even distribution of only two genders.`
+    },
+    {
+        title: "c)",
+        description: `Six participants were scheduled for the test and they all participated and completed the test successfully. `
+    },
+    {
+        title: "d)",
+        description: `Two participants were involved in a moderated virtual call testing, the next two participated in a face-to-face test, and the last two completed a list of tasks independently with no guide; however, they were required to answer questions in detail after every task was performed.`
+    },
+    
+]
+
+export const leadsAvatars = [
+   "Leslie", "Nana Yaw", "Sandra", "Victoria", "Maame Ansah", "Nicholas"
+]
+
+export const affinityMapping = {
+    challenges: [
+        {
+            avatar: "Victoria",
+            comment: "Figma made it very messy to use because a lot of features weren't responsive."
+        },
+        {
+            avatar: "Maame",
+            comment: "Toggling between some tabs was a bit slow. Eg from Contacts to People."
+        },
+        {
+            avatar: "Nana Yaw",
+            comment: "The modals aren't going to work in real time circumstances"
+        },
+        {
+            avatar: "Leslie",
+            comment: "Theres a lot going on on the overview page for me."
+        },
+        {
+            avatar: "Leslie",
+            comment: "Theres too many things to fill on the create contact page."
+        },
+    ],
+    comments: [
+        {
+            avatar: "Maame",
+            comment: "The key metrics are quite easy to find. I liked the red and green buttons used to indicate urgency."
+        },
+        {
+            avatar: "Victoria",
+            comment: "The colors are aesthetically pleasing. The layout isn't that bad. Very simple and straight to the point. Easy to navigate "
+        },
+        {
+            avatar: "Sandra",
+            comment: "The buttons for navigation were clearly labeled and informative"
+        },
+        {
+            avatar: "Leslie",
+            comment: "The interface is very user friendly. It's not too sophisticated. It's very cool and relaxing. It makes me want to work"
+        },
+        {
+            avatar: "Leslie",
+            comment: "The segregation of cold and warm leads is essential cause you know which lead to put effort into."
+        },
+        {
+            avatar: "Nick",
+            comment: "Its straightforward and doesn't require a lot of thinking. Anyone who has experienced a dashboard should be able to use this"
+        },
+        {
+            avatar: "Nana Yaw",
+            comment: "The interface is great. it has the right amount of colors to differentiate items."
+        },
+        {
+            avatar: "Maame",
+            comment: "I appreciated how I was provided a summary of each product without even clicking."
+        },
+    ],
+    reccomendations: [
+        {
+            avatar: "Victoria",
+            comment: "I understood a lot because i have a business background and have worked with CRMs before, but, from another perspective; this might not be as clear."
+        },
+        {
+            avatar: "Nana Yaw",
+            comment: "The yellows are hard to see. it would be visible if you made it darker."
+        },
+        {
+            avatar: "Victoria",
+            comment: "Please include more than two avatars for representation sake "
+        },
+        {
+            avatar: "Leslie",
+            comment: "Two sales people on a lead is not advisable because there can be competition. However if it's a team lead and a sales person that's okay."
+        },
+    ]
+}

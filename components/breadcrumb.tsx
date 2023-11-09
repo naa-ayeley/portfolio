@@ -12,8 +12,6 @@ export default function Breadcrumb() {
     const isInventory = lastPath && lastPath === "inventory-management"
 
     
-    
-    
     return (
         <div className='flex  md:text-sm items-center font-medium gap-3'>
             {

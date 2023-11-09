@@ -114,6 +114,10 @@ const hierarchy = [
     },
 ]
 
+const illustrations = [
+
+]
+
 export default function InventoryStyle() {
     return (
         <section className="flex py-8 flex-col gap-8" >
@@ -305,12 +309,33 @@ export default function InventoryStyle() {
                         </div>
                         <div className="flex flex-col gap-4">
                             <p className="text-lg font-medium ">Radio Buttons</p>
-                            
+
                             <ImageZoom alt="icons" src="/images/mockups/inv-rb.svg" />
 
                         </div>
                     </div>
                 </div>
+                <div className="mt-20 flex flex-col gap-4">
+                    <p className="text-lg font-medium ">Illustrations</p>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-16">
+                        {[1, 2, 3, 4, 5, 6, 7].map((item) => (
+                            <div key={item} className="aspect-square relative w-full">
+                                <Image src={`/images/mockups/inv-ill-${item}.svg`} alt={""} fill />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="mt-20 flex flex-col gap-4">
+                    <p className="text-lg font-medium ">Alerts</p>
+                    <div className="grid md:grid-cols-2 max-w-4xl  md:gap-8 ">
+                        {[1, 2, 3, 4].map((item) => (
+                            <div key={item} className="aspect-square relative w-full">
+                                <Image src={`/images/mockups/inv-alert-${item}.svg`} alt={""} fill />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </section>
     )

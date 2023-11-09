@@ -18,5 +18,8 @@ export const PROJECT_LINKS = {
     },
     inventory: {
         prototype: "https://www.figma.com/proto/KHNYuoO5LgwdDXmwQvDlvo/smartup-mobile?page-id=455%3A4197&type=design&node-id=955-3709&viewport=4998%2C-4232%2C0.23&t=lRktjEAcCBG0Pmun-1&scaling=scale-down&starting-point-node-id=955%3A4412&show-proto-sidebar=1&mode=design&fuid=1041726344395909298"
+    },
+    leads: {
+        prototype: "https://www.figma.com/proto/ZVVzEbX1tyeOnOfgIeq5lU/Leads-management?page-id=710%3A3&node-id=710-3654&viewport=1315%2C206%2C0.06&scaling=scale-down&starting-point-node-id=710%3A3654&mode=design&t=FYSHuRJJ2wCUHHC9-1"
     }
 }
