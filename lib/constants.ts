@@ -21,5 +21,8 @@ export const PROJECT_LINKS = {
     },
     leads: {
         prototype: "https://www.figma.com/proto/ZVVzEbX1tyeOnOfgIeq5lU/Leads-management?page-id=710%3A3&node-id=710-3654&viewport=1315%2C206%2C0.06&scaling=scale-down&starting-point-node-id=710%3A3654&mode=design&t=FYSHuRJJ2wCUHHC9-1"
+    },
+    resto: {
+        prototype: `https://www.figma.com/proto/mHdTX8ltj71fZTiWLqE3GX/Resto-Ux-Case-study-(Copy)?page-id=2%3A3&node-id=199-724&viewport=178%2C312%2C0.05&scaling=scale-down&starting-point-node-id=199%3A724&show-proto-sidebar=1&mode=design&t=kelLaneReNA8TWCT-1`
     }
 }

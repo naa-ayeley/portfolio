@@ -39,7 +39,7 @@ export default function TabView({ data, color }: TabViewProps) {
 
     return (
         <section className="w-full flex flex-col gap-4">
-            <Tabs defaultValue={views[0].value} className="w-full">
+            <Tabs defaultValue={views[0]?.value} className="w-full">
                 <div className="max-w-full relative w-full flex items-center px-[45px] justify-between overflow-x-auto hide-scroll">
                     {
                         showLeftIcon &&
@@ -47,7 +47,7 @@ export default function TabView({ data, color }: TabViewProps) {
                             <BsChevronLeft className="w-[20px] h-[20px] -translate-x-[2px]" />
                         </div>
                     }
-                    <TabsList className="gap-8 max-w-full overflow-x-auto justify-start hide-scroll" ref={scrollRef} >
+                    <TabsList className="gap-8 max-w-full mx-auto overflow-x-auto justify-start hide-scroll" ref={scrollRef} >
                         {
                             views.map((view) => (
                                 <TabsTrigger className={cn(

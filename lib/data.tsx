@@ -28,6 +28,12 @@ import {
     ThengaWebStyle,
     ThengaStyleGuide
 } from "@/components/tabs/thenga";
+import RestoOverview from "@/components/tabs/resto/resto-overview";
+import RestoEmpathizing from "@/components/tabs/resto/resto-empathising";
+import RestoDefining from "@/components/tabs/resto/resto-defining";
+import RestoIdeation from "@/components/tabs/resto/resto-ideation";
+import RestoDesign from "@/components/tabs/resto/resto-design";
+import RestoTesting from "@/components/tabs/resto/resto-testing";
 
 export const navlinks: Navlink[] = [
     {
@@ -299,7 +305,36 @@ export const tabViews = {
         },
     ],
     resto: [
-
+        {
+            label: "Overview",
+            value: "overview",
+            render: <RestoOverview />
+        },
+        {
+            label: "Empathising",
+            value: "empathising",
+            render: <RestoEmpathizing />
+        },
+        {
+            label: "Defining",
+            value: "defining",
+            render: <RestoDefining />
+        },
+        {
+            label: "Ideation",
+            value: "ideation",
+            render: <RestoIdeation />
+        },
+        {
+            label: "Design",
+            value: "design",
+            render: <RestoDesign />
+        },
+        {
+            label: "Testing",
+            value: "testing",
+            render: <RestoTesting />
+        },
     ],
     "thenga-wireframe": [
         {
@@ -626,3 +661,52 @@ export const invConclusion = [
     `Additionally, some users requested a more responsive prototype which I will continue to work on to make this prototype and future prototypes easier to use. The study also revealed that users valued the categorisations of leads and the colours used to differentiate items.`,
     `Overall, the leads management system has a solid foundation in terms of usability, but there is room for improvement (on my part) regarding the prototype's responsiveness to enhance the user experience during a usability test. The feedback gathered from the usability study was used to inform the current design iterations and improvements to the system.`,
 ]
+
+export const restoData = {
+    overview: [
+        {
+            img: "resto-problem.svg",
+            title: "Problem",
+            desc: `People find accessing valid Information on restaurants and booking/reserving tables difficult. They are also faced with poor/unreliable user experiences when using online platforms. `
+        },
+        {
+            img: "resto-goal.svg",
+            title: "Goal",
+            desc: `The goal is to design a user-friendly platfrom that is simple to use but contains enough information for the user to make reservations and pre-order meals. `
+        },
+    ],
+    qualitativeResearch: {
+        questions: [
+            "How old are you?",
+            "How often do you eat at restaurants?",
+            "Do you often make reservations before heading to a restaurant?",
+            "Have you faced any challenges so far?",
+            "How did it make you feel?",
+        ],
+        insights: [
+            "People dont make reservations because they think it doesnt matter",
+            "People acquire restaurant information from blogs and restaurant websites.",
+            "People book tables and on arrival, they are told the table was never booked",
+            "The process of calling restaurants gets annoying sometimes",
+            "Everything (accessing information, booking, pre-ordering etc.) occurs on the web or by calling. There are no known mobile apps that offer such services.",
+        ]
+    },
+    quantitativeResearch: [
+        {
+            title: "How often do you go to restaurants to eat?",
+            img: "resto-chart-1.svg"
+        },
+        {
+            title: "Do you make reservations online ?",
+            img: "resto-chart-2.svg"
+        },
+        {
+            title: "How do you access information about restaurants online (menus, availability etc)?",
+            img: "resto-chart-3.svg"
+        },
+        {
+            title: "Do you receive adequate and up-to-date information from these mediums (website, social media etc)?",
+            img: "resto-chart-4.svg"
+        },
+    ]
+}
