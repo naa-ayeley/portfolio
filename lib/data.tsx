@@ -596,3 +596,33 @@ export const affinityMapping = {
         },
     ]
 }
+
+export const invFeedback = [
+    {
+        change: "Modals to pages. ",
+        justification: "Modals seem appropriate for the design but wouldn't be if data is continuously added. Changing them to pages can contain bulk data and make navigating easier.",
+        severity: "High "
+    },
+    {
+        change: "Review colors",
+        justification: "Review the colours and make sure they are visible enough for the user.",
+        severity: "High "
+
+    },
+    {
+        change: "Add more avatars",
+        justification: "Add more avatars to the design to make the design more inclusive.",
+        severity: "medium "
+    },
+    {
+        change: "Review the whole design",
+        justification: "Review the prototype vigorously to edit and solve errors.",
+        severity: "medium "
+    },
+]
+
+export const invConclusion = [
+    `Based on the feedback from the usability test and the SUS data, it can be concluded that the Leads management system I designed has a logical user flow with an overall good user interface. The product was comprehensible and usable to most participants, with a high conversion rate. However, some areas needed improvement, particularly with the contacts and leads features and some user interface components.`,
+    `Additionally, some users requested a more responsive prototype which I will continue to work on to make this prototype and future prototypes easier to use. The study also revealed that users valued the categorisations of leads and the colours used to differentiate items.`,
+    `Overall, the leads management system has a solid foundation in terms of usability, but there is room for improvement (on my part) regarding the prototype's responsiveness to enhance the user experience during a usability test. The feedback gathered from the usability study was used to inform the current design iterations and improvements to the system.`,
+]

@@ -4,8 +4,17 @@ import AffinityMappingCard from "@/components/cards/affinity-mapping-card"
 import { Heading } from "@/components/hierarchy"
 import LineHeading from "@/components/hierarchy/line-heading"
 import ImageZoom from "@/components/image-zoom"
+import {
+    Table,
+    TableBody,
+    TableCaption,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from "@/components/ui/table"
 import { OWNER, PROJECT_LINKS } from "@/lib/constants"
-import { affinityMapping, leadsAvatars, leadsParticipants, leadsResearch, leadsScript, leadsSummary } from "@/lib/data"
+import { affinityMapping, invConclusion, invFeedback, leadsAvatars, leadsParticipants, leadsResearch, leadsScript, leadsSummary } from "@/lib/data"
 import { Metadata } from "next"
 import Image from "next/image"
 
@@ -29,6 +38,7 @@ type LeadsGrid = {
     }[]
     color: string
     title: string
+    textColor: string
 }
 
 function List({ item }: LeadsList) {
@@ -48,7 +58,7 @@ function List({ item }: LeadsList) {
     )
 }
 
-function Grid({ item, color, title }: LeadsGrid) {
+function Grid({ item, color, title, textColor }: LeadsGrid) {
     return (
         <div className="w-full gap-4">
             <p className="text-[#6973A4] font-medium">
@@ -58,9 +68,9 @@ function Grid({ item, color, title }: LeadsGrid) {
             <div className="grid w-full mt-4 grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
                 {
                     item.map(({ avatar, comment }, i) => (
-                        <AffinityMappingCard key={i} avatar={avatar} comment={comment} color={color} />
+                        <AffinityMappingCard textColor={textColor} key={i} avatar={avatar} comment={comment} color={color} />
                     ))
-                    }
+                }
             </div>
         </div>
     )
@@ -250,10 +260,95 @@ export default function LeadsManagementPage() {
                 <p>
                     After the test, i compiled and summarised the data collected and used the card sorting method to group my insights and build effectively toward next steps.
                 </p>
-                <Grid item={affinityMapping.challenges} title="Challenges" color="#ABC9FB" />
-                <Grid item={affinityMapping.comments} title="Comments" color="#6287D9" />
-                <Grid item={affinityMapping.reccomendations} title="Recommendations" color="#637BA4" />
+                <Grid textColor="#484A56" item={affinityMapping.challenges} title="Challenges" color="#ABC9FB" />
+                <Grid textColor="#fff" item={affinityMapping.comments} title="Comments" color="#6287D9" />
+                <Grid textColor="#484A56" item={affinityMapping.reccomendations} title="Recommendations" color="#02D58E" />
+
+                <div className="flex flex-col gap-4 mt-8">
+                    <p className="font-semibold text-xl">
+                        Insights
+                    </p>
+                    <div className="">
+                        <p>
+                            The test identified only a few minor problems, including: <br />
+                            <span className="font-semibold">
+                                · Modals
+                            </span>
+                            - the idea of modals seemed fitting but will not be practical in real-time. <br />
+                            <span className="font-semibold">
+                                · Color choices
+                            </span>
+                            - some colours were hard to see. <br />
+                            <span className="font-semibold">
+                                · Usability
+                            </span>
+                            - some buttons weren&apos;t working. <br />
+                            <span className="font-semibold">
+                                · Responsiveness
+                            </span>
+                            - some participants wanted the prototype to be more responsive. <br />
+                            <span className="font-semibold">
+                                · Representation-
+                            </span>
+                            provision of more than two avatars for representation. <br />
+                            <span className="font-semibold">
+                                · Inclusivity
+                            </span>
+                            - some users wondered how easy the product would be for people who are not business, marketing or sales inclined.
+                        </p>
+                    </div>
+                </div>
             </section>
+            <section className="flex flex-col gap-8">
+                <LineHeading title="Implementing Feedback" />
+                <p>
+                    Most of the feedback and recommendations received were compiled and grouped by severity. The data with the highest severity were implemented immediately because they focused more on improving the product&apos;s user experience and what does not work well for users.
+                </p>
+                <Table className="w-full lg:max-w-[90%] border ">
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead className="text-center text-bluey border font-semibold md:text-lg">Change</TableHead>
+                            <TableHead className="text-center text-bluey border font-semibold md:text-lg">Justification</TableHead>
+                            <TableHead className="text-center text-bluey font-semibold md:text-lg">Severity</TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody className="md:text-">
+                        {
+                            invFeedback.map((h, i) => (
+                                <TableRow key={i}>
+                                    <TableCell className={"font-bold border text-center w-max flex-1" }> {h.change} </TableCell>
+                                    <TableCell className={" lg:p-8 border"}> {h.justification} </TableCell>
+                                    <TableCell className={"text-center"}> {h.severity} </TableCell>
+                                </TableRow>
+                            ))
+                        }
+
+                    </TableBody>
+                </Table>
+
+
+            </section>
+            <section>
+                <ImageZoom src="/images/mockups/inv-post-test.svg" alt="" />
+            </section>
+            <section className="flex flex-col gap-8">
+                <LineHeading title="Conclusion" />
+
+                <div className="flex flex-col gap-8 lg:max-w-[90%] w-full">
+                    {
+                        invConclusion.map((text, index) => (
+                            <div key={index} className="flex items-start gap-1">
+                                <Image className="object-contain aspect-square mt-2" src={`/images/icons/${index + 1}.svg`} alt={index.toString()} width={45} height={50} />
+                                <p>
+                                    {text}
+                                </p>
+                            </div>
+                        ) )
+                    }
+
+                </div>
+            </section>
+
         </main>
     )
 }
