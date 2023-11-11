@@ -7,6 +7,8 @@ import { expertise, personality, testimonials } from '@/lib/data'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { SlMouse } from 'react-icons/sl'
+import { HiOutlineChevronDoubleDown } from 'react-icons/hi2'
 
 const AboutPage = () => {
     return (
@@ -21,7 +23,7 @@ const AboutPage = () => {
                 </p>
                 <BlueLink href="/resume" label='View My Resume' />
             </div>
-            <div className='grid grid-cols-3 gap-1 md:gap-4'>
+            <div className='hidden md:grid grid-cols-3 gap-1 md:gap-4'>
                 <div className='h-full relative w-full ml-auto max-w-[99%] flex items-start justify-start'>
 
                     <div className='relative w-full  md:h-[90%] aspect-[9/16]'>
@@ -41,6 +43,17 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="min-h-[30vh] block md:hidden">
+                <div className="w-full absolute    left-0">
+                    <div className="relative">
+                        <div className=" w-full aspect-video absolute  left-0 ">
+                           <Image fill alt="naa" src='/images/mockups/naa-grid.svg' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className='grid grid-cols-1 gap-8 md:gap-y-16 md:gap-x-8 md:grid-cols-2'>
                 {
                     personality.map((pers) => (
@@ -92,7 +105,7 @@ const AboutPage = () => {
                     sub='Testimonials'
                     title={`Kind words from kind people`}
                 />
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-scroll '>
+                <div className='grid md:grid-cols-2 py-8 lg:grid-cols-3 gap-4 overflow-x-scroll '>
                     {
                         testimonials.map((test) => (
                             <TestimonialCard key={test.name} testimonial={test} />
@@ -100,6 +113,13 @@ const AboutPage = () => {
                     }
                 </div>
             </div>
+            <a href="#" className='mt- flex flex-col gap-2 items-center justify-center'>
+                    <div className='flex flex-col items-center rotate-180   justify-center  text-xl'>
+                        <SlMouse className="text-2xl" />
+                        <HiOutlineChevronDoubleDown  />
+                    </div>
+                    <p className='text-xs md:text-sm text-bluey font-light '>Back to the top</p>
+                </a>
         </section>
     )
 }

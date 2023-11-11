@@ -46,7 +46,7 @@ export const navlinks: Navlink[] = [
             },
             {
                 name: "Mobile Designs",
-                href: "/work#mobile-designs"
+                href: "/work#web-designs"
             },
             {
                 name: "Product Designs",
@@ -71,14 +71,14 @@ export const navlinks: Navlink[] = [
 export const projects: Projects = {
     web: [
         {
-            title: "Thenga Website",
-            img: "/images/mockups/thenga-website.svg",
-            preview: "https://www.figma.com/proto/tVN7l3qXcs5B2RcYfjIolc/PAYUP-WEB?page-id=0%3A1&node-id=58-2&viewport=523%2C-105%2C0.05&scaling=scale-down&starting-point-node-id=58%3A2&show-proto-sidebar=1&mode=design&t=XpdtTy1o8zIhQK64-1",
+            title: "Ehealth Website",
+            img: "/images/mockups/ehealth-web.svg",
+            preview: "/",
         },
         {
-            title: "Thenga Extension",
-            img: "/images/mockups/thenga-extension.svg",
-            preview: "https://www.figma.com/proto/WCcVmgb3kWYU8SsjyE3WUI/Thenga?page-id=0%3A1&node-id=642-2077&viewport=383%2C794%2C0.1&scaling=contain&starting-point-node-id=642%3A2077&mode=design&t=exfBb4YdDgENi7Ih-1",
+            title: "52 Weeks Website",
+            img: "/images/mockups/52web.svg",
+            preview: "/",
         },
         {
             title: "Pay Up Website",
@@ -86,19 +86,19 @@ export const projects: Projects = {
             preview: "https://www.figma.com/proto/tVN7l3qXcs5B2RcYfjIolc/PAYUP-WEB?page-id=0%3A1&node-id=58-2&viewport=523%2C-105%2C0.05&scaling=scale-down&starting-point-node-id=58%3A2&show-proto-sidebar=1&mode=design&t=0zBD6egems62QBME-1",
         },
         {
-            title: "Detosphere Website",
-            img: "/images/mockups/detosphere-website.svg",
-            preview: "https://detosphere.com/",
+            title: "Members Management App",
+            img: "/images/mockups/members-web.svg",
+            preview: "/",
+        },
+        {
+            title: "Property & Roomie Finder",
+            img: "/images/mockups/prop-web.svg",
+            preview: "/",
         },
         {
             title: "NCA Website",
-            img: "/images/mockups/nca-website.svg",
+            img: "/images/mockups/nca-web.svg",
             preview: "https://www.niicudjoeandassociatesgh.com/",
-        },
-        {
-            title: "Astra Website",
-            img: "/images/mockups/astra-website.svg",
-            preview: "https://www.astragatewayintgh.com/",
         },
     ],
     mobile: [

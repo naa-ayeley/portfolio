@@ -17,14 +17,14 @@ const ProjectCard = ({ project, variant }: ProjectCardProps) => {
     return (
         <article className='w-full min-h-max gap-2 flex flex-col '>
             <div className={`relative w-full aspect-square 
-             min-h-[200px] 
+             
                     `}>
                 <Image src={img} alt={title} fill className={` ${variant !== "web" ? "object-contain" : "object-contain"} `} />
             </div>
             {
                 variant === "web" && preview && (
                     <Link className='mt-2' href={preview || "/"}>
-                        <p className='text-center'>
+                        <p className='max-sm:text-xs text-center text-[#7D7F90]'>
                             {title}
                         </p>
                     </Link>
@@ -42,7 +42,7 @@ const ProjectCard = ({ project, variant }: ProjectCardProps) => {
 
                         {
                             tags && tags.map((tag, i) => (
-                                <div key={i} className='bg-[#D9D9D9] px-4 font-medium w-max py-2 rounded-[6px] text-sm' >
+                                <div key={i} className='bg-[#D9D9D9] px-2 md:px-4 font-medium w-max py-2 rounded-[6px] text-xs md:text-sm' >
                                     {tag}
                                 </div>
                             ))

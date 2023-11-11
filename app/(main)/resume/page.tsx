@@ -30,7 +30,7 @@ const Resume = () => {
 
                 <BlueLink href="/resume" label='View My Resume' />
             </div>
-            <div className='h-full relative w-full ml-auto max-w-[90%] flex items-start justify-start'>
+            <div className='h-full relative w-full ml-auto max-w-[90%] hidden md:flex items-start justify-start'>
 
                 <div className='relative w-full  md:h-[70%] aspect-[9/16]'>
                     <Image src="/images/naa.svg" alt={OWNER} fill className='object-cover' />

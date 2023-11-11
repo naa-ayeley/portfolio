@@ -9,7 +9,7 @@ interface TestimonialCardProps {
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
     const { name, role, test } = testimonial
     return (
-        <article className='relative flex flex-col gap-2 shadow-sm test-shadow p-8 w-full '>
+        <article className='relative flex flex-col gap-2 shadow-sm test-shadow p-4 md:p-8 w-full '>
             <RiDoubleQuotesL className="text-[#5E9AF3]/20 text-5xl" />
             <p className='text-sm font-light'>
                 {test}

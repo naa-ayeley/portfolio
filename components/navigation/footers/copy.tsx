@@ -8,7 +8,7 @@ import { FaLinkedinIn, FaBehance, FaTwitter } from 'react-icons/fa6'
 
 const Copy = () => {
   return (
-    <footer className='bg-[#DDEBFF] max-md:text-sm py-4 flex items-center justify-center w-screen' >
+    <footer className=' max-md:text-sm py-4 flex items-center justify-center w-screen' >
       <ul className='grid md:grid-cols-3 max-md:text-center gap-x-8 gap-y-4'>
         <li className='max-md:text-center'>
           {MAIL_URL}
@@ -17,7 +17,7 @@ const Copy = () => {
           <Copyright className='w-4 h-4 text-zinc-600' />
           {getCurrentYear()} {OWNER}
         </li>
-        <li className='flex text-lg items-center justify-center gap-4'>
+        <li className='flex text-lg text-bluey items-center justify-center gap-4'>
           <Link className='' href={LINKEDIN_URL} >
             <FaLinkedinIn />
           </Link>

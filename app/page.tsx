@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <>
       {/* <WelcomeModal /> */}
-      <section className='min-h-[80vh] relative flex flex-col items-center justify-center p-4'>
+      <section className='min-h-[80vh] relative flex flex-col items-center justify-center md:p-4'>
         <div className='flex flex-col justify-center max-w-5xl  items-center text-center gap-4'>
           <p className='text-xl md:text-2xl font-light'>Hiya 👋🏾</p>
           <h1 className='text-5xl lg:text-6xl text-[#484A56] font-'>
             I <span className='text-seablue'>Create, Manage</span> and <span className='text-seablue'>Market</span> Digital Products.
           </h1>
-          <p className='max-sm:text-sm font-light'>
+          <p className='max-sm:text-s w-full font-light'>
             I create meaningful digital experiences using modern and practical approaches to build connections between individuals and digital products.
           </p>
           <div className='mx-auto text-bluey flex text-xl md:text-2xl items-center gap-10'>
@@ -52,10 +52,10 @@ export default function Home() {
       </section>
       <section className='flex pt-16 flex-col gap-4'>
         <Heading
-          title='Web Designs'
+          title='Mobile & Web Designs'
           sub='Selected Projects'
         />
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
+        <div className='grid  grid-cols-3 gap-x-2 md:gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
           {
             projects.web.map((project) => (
               <ProjectCard key={project.title} variant="web" project={project} />
@@ -63,19 +63,7 @@ export default function Home() {
           }
         </div>
       </section>
-      <section className='flex pt-16 flex-col gap-4'>
-        <Heading
-          title='Mobile Designs'
-          sub='Selected Projects'
-        />
-        <div className='grid md:grid-cols-2  gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
-          {
-            projects.mobile.map((project) => (
-              <ProjectCard key={project.title} variant="mobile" project={project} />
-            ))
-          }
-        </div>
-      </section>
+      
       <section className='flex pt-16 flex-col gap-4'>
         <Heading
           title='Product Designs'

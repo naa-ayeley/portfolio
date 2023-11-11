@@ -34,8 +34,12 @@ export default function Navbar() {
         <section className='w-full container max-sm:px-4 mx-auto'>
             {/* Desktop */}
             <header className="py-4 md:flex hidden items-center gap-8 justify-between ">
-                <Link href='/'>
-                    <Image src="/images/logos/logo.svg" alt="Logo" width={190} height={40} />
+                <Link className='flex items-center gap-4' href='/'>
+                    <Image src="/images/logos/logo.svg" alt="Logo" width={50} height={40} />
+                    <p className=''>
+
+                        {OWNER}
+                    </p>
                 </Link>
                 <nav className='flex items-center gap-6'>
                     {
@@ -70,7 +74,7 @@ export default function Navbar() {
             <header className='w-full  flex md:hidden items-center justify-between py-4'>
                 <Link href='/'>
                     <Avatar className='w-[50px] h-[50px]'>
-                        <AvatarImage src="/images/logos/favicon.svg" />
+                        <AvatarImage src="/images/logos/logo.svg" />
                         <AvatarFallback> {getInitials(OWNER)} </AvatarFallback>
                     </Avatar>
                 </Link>
@@ -84,8 +88,17 @@ export default function Navbar() {
                         <FiX />
                     </button>
                     <nav className='flex w-full flex-col mt-4 gap-8 px-4'>
-                        <Link href='/' className='mx-auto' onClick={closeMenu}>
-                            <Image src="/images/logos/logo.svg" alt="Logo" width={230} height={40} />
+                        <Link href='/' className='mx-auto flex items-center gap-4 ' onClick={closeMenu}>
+                            <Image src="/images/logos/logo.svg" alt="Logo" width={65} height={40} />
+                            <div className="flex flex-col gap-1">
+                                <p className='text-xl'>
+
+                                    {OWNER}
+                                </p>
+                                <p className='text-xs font-light'>
+                                Creator . Manager. Marketer
+                                </p>
+                            </div>
                         </Link>
 
                         <ul className='flex flex-col gap-4 w-full relative'>
@@ -132,7 +145,7 @@ export default function Navbar() {
 }
 
 const Sublink = ({ name, href }: Navlink) => {
-    
+
     return (
         <Link className='hover:bg-bluey/20 text-bluey px-4 rounded-lg py-2' href={href}>
             {name}

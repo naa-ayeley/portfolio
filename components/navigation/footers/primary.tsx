@@ -4,11 +4,13 @@ import Link from 'next/link'
 import { BEHANCE_URL, LINKEDIN_URL, TWITTER_URL } from '@/lib/constants'
 /* eslint-disable */
 import { FaBehance, FaLinkedinIn, FaTwitter } from 'react-icons/fa6'
+import { SlMouse } from 'react-icons/sl'
+import { HiOutlineChevronDoubleDown } from 'react-icons/hi2'
 
 const PrimaryFooter = () => {
     return (
         <>
-            <div className='md:min-h-[50vh] w-full flex flex-col items-center justify-center p-8'>
+            <div className='md:min-h-[50vh] w-full flex flex-col gap-8 items-center justify-center p-8'>
                 <div className='flex flex-col gap-3 md:gap-6 items-center text-center'>
                     <p className='md:text-xl text-sm'>
                         Not you scrolling to the bottom 😌,
@@ -29,8 +31,15 @@ const PrimaryFooter = () => {
                         </Link>
                     </div>
                 </div>
+                <a href="#" className='mt- flex flex-col gap-2 items-center justify-center'>
+                    <div className='flex flex-col items-center rotate-180   justify-center  text-xl'>
+                        <SlMouse className="text-2xl" />
+                        <HiOutlineChevronDoubleDown  />
+                    </div>
+                    <p className='text-xs md:text-sm text-bluey font-light '>Back to the top</p>
+                </a>
             </div>
-            <Copy />
+            {/* <Copy /> */}
         </>
     )
 }

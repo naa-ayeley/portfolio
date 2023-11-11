@@ -8,10 +8,10 @@ const WorkPage = () => {
         <>
             <section id="web-designs" className='flex pt-16 flex-col gap-4'>
                 <Heading
-                    title='Web Designs'
+                    title='Mobile & Web Designs'
                     sub='Selected Projects'
                 />
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
+                <div className='grid  grid-cols-3 gap-x-2 md:gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
                     {
                         projects.web.map((project) => (
                             <ProjectCard key={project.title} variant="web" project={project} />
@@ -19,19 +19,7 @@ const WorkPage = () => {
                     }
                 </div>
             </section>
-            <section id="mobile-designs" className='flex pt-16 flex-col gap-4'>
-                <Heading
-                    title='Mobile Designs'
-                    sub='Selected Projects'
-                />
-                <div className='grid md:grid-cols-2  gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
-                    {
-                        projects.mobile.map((project) => (
-                            <ProjectCard key={project.title} variant="mobile" project={project} />
-                        ))
-                    }
-                </div>
-            </section>
+            
             <section id="product-designs" className='flex pt-16 flex-col gap-4'>
                 <Heading
                     title='Product Designs'
