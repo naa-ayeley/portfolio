@@ -708,5 +708,66 @@ export const restoData = {
             title: "Do you receive adequate and up-to-date information from these mediums (website, social media etc)?",
             img: "resto-chart-4.svg"
         },
-    ]
+    ],
+    painPoints: [
+        {
+            title: "Uninformative",
+            desc: "Difficulty accessing adequate information "
+        },
+        {
+            title: "Unreliable",
+            desc: "Difficulty booking/reserving tables "
+        },
+        {
+            title: "Inaccessible",
+            desc: "Platforms are usually web based  "
+        },
+        {
+            title: "Unreliable",
+            desc: "Poor/unreliable user experiences "
+        },
+        {
+            title: "Inaccessible",
+            desc: " Platforms only cover restaurants in major areas "
+        },
+    ],
+    problems: [
+        `Sasha is a student who needs a way to access adequate information on restaurants and make reservations seamlessly because she finds calling the restaurants irritating.`,
+        `Freedom is a hardworking entrepreneur who needs a way to make reservations without using websites or web apps because they are slow and unresponsive.`,
+        `Sarah is a working mother who needs a reliable platform to access menus easily because her family prefers to know what is on the menu before heading to the restaurant.`,
+    ],
+    userStories: [
+        `As a student who loves to spend time with family and friends, I want a platform that will allow me to make table reservations easily, So that I won't have to keep calling a restaurant when I want to make a reservation. `,
+        `As an Entrepreneur who loves to work, I want a product that sends confirmation texts, emails or notifications after making a reservation; So I can be sure that my booking has been recorded.`,
+        `As a working mother who loves to take her family on dates, I want a platform that provides all the necessary details about the restaurant, especially their menus, So that my family and I know what we will get before we get there.`,
+    ],
+
+    testing: {
+        questions: [
+            `By the first glance of the homepage, can you get the "big picture" of what is offered on the app?`,
+            `How do you feel about the overall experience of the app?`,
+            `Did you reach your goal?`,
+            `Did you face any challenges?`,
+            `What other comments do you have`,
+        ],
+        who: [
+            `Participants are people who often go to restaurants to eat`,
+            `Participants are people between the ages of 18-45`,
+            `Participants include a relatively even distribution of only two genders.`,
+            `Participants include people with different social and economic backgrounds with different abilities. `,
+        ],
+        participants: [
+            "Zoya",
+            "Sarah",
+            "Freedom",
+            "Gabe",
+            "Forgive"
+        ],
+        insights: [
+            "It was observed that most users had trouble finding the “make a reservation” button. This means that the “make a reservation” button is difficult to find for almost all users stunting the flow of the booking process.",
+            "It was observed that most users were comfortable and familiar with the interface and its processes. However the only elderly person in the group needed assistance but got a hold of it on the second and third try. ",
+            "It was also observed that most users needed a way to order more than one meal without having to go back and forth. "
+        ]
+    }
+
 }
