@@ -20,8 +20,8 @@ const Carousel: React.FC<CarouselProps> = ({ projects }) => {
                 <div key={project.title} style={{ 
                     scrollSnapAlign: 'start',
                     flex: '0 0 auto',
-                    width: '300px', // adjust this value as needed
-                    marginRight: '16px', // adjust this value as needed
+                    width: '300px',
+                    marginRight: '16px',
                  }}>
                     <ProjectCard key={project.title} variant="web" project={project} />
                 </div>
