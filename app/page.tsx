@@ -1,3 +1,4 @@
+"use client";
 // import Image from 'next/image';
 import React from 'react';
 import WelcomeModal from '@/components/modals/welcome-modal';
@@ -9,6 +10,8 @@ import { HiOutlineChevronDoubleDown } from 'react-icons/hi2';
 import Heading from '@/components/hierarchy/heading';
 import { projects } from '@/lib/data';
 import ProjectCard from '@/components/cards/project-card';
+import Carousel from '../components/Carousel'
+
 
 export default function Home() {
   return (
@@ -50,20 +53,7 @@ export default function Home() {
           <p className='text-sm text-bluey font-light '>Scroll Down</p>
         </div>
       </section>
-      <section className='flex pt-16 flex-col gap-4'>
-        <Heading
-          title='Mobile & Web Designs'
-          sub='Selected Projects'
-        />
-        <div className='grid  grid-cols-3 gap-x-2 md:gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
-          {
-            projects.web.map((project) => (
-              <ProjectCard key={project.title} variant="web" project={project} />
-            ))
-          }
-        </div>
-      </section>
-      
+
       <section className='flex pt-16 flex-col gap-4'>
         <Heading
           title='Product Designs'
@@ -77,6 +67,16 @@ export default function Home() {
           }
         </div>
       </section>
+
+      <section className='flex pt-16 flex-col gap-4'>
+        <Heading
+          title='Mobile & Web Designs'
+          sub='Selected Projects'
+        />
+
+        <Carousel projects={projects.web} />
+      </section>
+      
       <section className='flex pt-16 flex-col gap-4'>
         <Heading
           title='Case Studies'

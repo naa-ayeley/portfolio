@@ -76,11 +76,6 @@ export const projects: Projects = {
             preview: "/",
         },
         {
-            title: "52 Weeks Website",
-            img: "/images/mockups/52web.svg",
-            preview: "/",
-        },
-        {
             title: "Pay Up Website",
             img: "/images/mockups/pay-up-website.svg",
             preview: "https://www.figma.com/proto/tVN7l3qXcs5B2RcYfjIolc/PAYUP-WEB?page-id=0%3A1&node-id=58-2&viewport=523%2C-105%2C0.05&scaling=scale-down&starting-point-node-id=58%3A2&show-proto-sidebar=1&mode=design&t=0zBD6egems62QBME-1",
