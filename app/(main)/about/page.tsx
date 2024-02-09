@@ -68,7 +68,7 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 gap-8 md:gap-y-16 md:gap-x-8 md:grid-cols-2'>
+            <div className='grid grid-cols-1 gap-8 md:gap-y-16 md:gap-x-8 '>
                 {
                     personality.map((pers) => (
                         <PersonalityCard key={pers.title} personality={pers} />
