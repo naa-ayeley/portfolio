@@ -9,7 +9,7 @@ import { HiOutlineChevronDoubleDown } from 'react-icons/hi2';
 import Heading from '@/components/hierarchy/heading';
 import { projects } from '@/lib/data';
 import ProjectCard from '@/components/cards/project-card';
-import Carousel from '../components/carousel'
+import Carousel from '@/components/carousel';
 
 
 export default function Home() {
