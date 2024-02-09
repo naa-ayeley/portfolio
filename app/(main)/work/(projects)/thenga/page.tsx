@@ -1,5 +1,6 @@
 import BlueLink from "@/components/blue-link"
 import Heading from "@/components/hierarchy/heading"
+import ScrollButton from "@/components/scroll-button"
 import TabView from "@/components/tab-view"
 import { PROJECT_LINKS } from "@/lib/constants"
 import Image from "next/image"
@@ -55,7 +56,8 @@ export default function ThengaPage() {
                 </article>
             </section>
             <TabView data="thenga" />
-
+            
+            
         </>
     )
 }

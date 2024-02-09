@@ -13,9 +13,9 @@ export default function ProjectsLayout({
     children: React.ReactNode
 }) {
     return (
-        <>
+        <div className="">
             {children}
-        </>
+        </div>
     )
 
 }

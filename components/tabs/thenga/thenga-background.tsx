@@ -25,27 +25,27 @@ export default function ThengaBackground() {
 
             <div className="flex flex-col gap-4">
                 <Subheading label="Design Process" />
-                <div className=" flex flex-col md:flex-row items-center gap-8">
+                <div className=" flex flex-col md:flex-row md:items-center gap-8">
                     <DesignProcessCard variant="strategy" />
-                    <p className="text-center md:text-left">
+                    <p className="text-left">
                         My task was to redesign the Thenga product, which at the time, was just a website. But after strategising with my team, determining what we wanted to build and who it was for, we decided to split the product into two parts. This stage was essential because it allowed me to improve the user experience and create a more streamlined process for shoppers.
                     </p>
                 </div>
-                <div className=" flex flex-col md:flex-row items-center gap-8">
+                <div className=" flex flex-col md:flex-row md:items-center gap-8">
                     <DesignProcessCard variant="scope" />
-                    <p className="text-center md:text-left">
+                    <p className="text-left">
                         Through our discussions and brainstorming sessions, we were able to come up with a unique and innovative approach to the redesign that I believe will significantly benefit many people. We explored what features and functions were within our scope and iterated until we decided what was best. We chose to go big or go home.
                     </p>
                 </div>
-                <div className=" flex flex-col md:flex-row items-center gap-8">
+                <div className=" flex flex-col md:flex-row md:items-center gap-8">
                     <DesignProcessCard variant="structure" />
-                    <p className="text-center md:text-left">
+                    <p className="text-left">
                         As a designer, The goal for the redesign was to merge aesthetics with functionality to create a simple and logical digital experience that anybody can use. I organised all the ideas into more concrete elements using different structures, i.e. user journey map, information architecture, and user flows, to define how users will get to specific information and where they can go next.
                     </p>
                 </div>
-                <div className=" flex flex-col md:flex-row items-center gap-8">
+                <div className=" flex flex-col md:flex-row md:items-center gap-8">
                     <DesignProcessCard variant="skeleton" />
-                    <p className="text-center md:text-left">
+                    <p className="text-left">
                         Lastly, I put my ideas together to create low and high-fidelity prototypes to visualise the flow of the product, if the features work, and how it will look to the user. I made several iterations before the final design to ensure efficiency and ease of use.
                     </p>
                 </div>

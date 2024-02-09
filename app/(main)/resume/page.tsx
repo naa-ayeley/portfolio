@@ -32,9 +32,12 @@ const Resume = () => {
             </div>
             <div className='h-full relative w-full ml-auto max-w-[90%] hidden md:flex items-start justify-start'>
 
-                <div className='relative w-full  md:h-[70%] aspect-[9/16]'>
-                    <Image src="/images/naa.svg" alt={OWNER} fill className='object-cover' />
+                <div className='relative w-full  md:h-[70%] aspect-square'>
+                    <Image src="/images/avatars/naa-circle.svg" alt={OWNER} fill className='object-contain' />
                 </div>
+            </div>
+            <div className='md:col-span-2 w-full relative h-[300px] max-md:hidden'>
+                    <Image fill src="/images/vectors/planets2.svg" alt="planets" className="object-cover" />
             </div>
         </section>
     )
