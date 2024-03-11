@@ -36,10 +36,15 @@ export default function Navbar() {
             <header className="py-4 md:flex hidden items-center gap-8 justify-between ">
                 <Link className='flex items-center gap-4' href='/'>
                     <Image src="/images/logos/logo.svg" alt="Logo" width={50} height={40} />
-                    <p className=''>
+                    <div className="flex flex-col gap-">
+                        <p className='text-xl'>
 
-                        {OWNER}
-                    </p>
+                            {OWNER}
+                        </p>
+                        <p className='text-xs font-light'>
+                            Creator . Manager. Marketer
+                        </p>
+                    </div>
                 </Link>
                 <nav className='flex items-center gap-6'>
                     {

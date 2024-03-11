@@ -91,7 +91,7 @@ const AboutPage = () => {
 
                     <Link className='underline' href="https://www.interaction-design.org/literature/article/what-is-interaction-design">Interaction Design (IXD)</Link> ,
                     {" "}
-                    Product management and Digital Marketing for both web and mobile products. Below is a more granular breakdown of my skill-set and services.
+                    Product strategy, management and Digital Marketing. Below is a more granular breakdown of my skill-set and services.
                 </p>
                 <div className='flex flex-col gap-4'>
                     <p className='text-bluey font-medium'>
