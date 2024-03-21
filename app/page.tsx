@@ -23,7 +23,7 @@ export default function Home() {
             I <span className='text-seablue'>Create, Manage</span> and <span className='text-seablue'>Market</span> Digital Products.
           </h1>
           <p className='max-sm:text-s w-full font-light'>
-            I create meaningful digital experiences using modern and practical approaches to build connections between individuals and digital products.
+            I am focused on creating digital experiences using storytelling and contemporary approaches to connect individuals with your business and products.
           </p>
           <div className='mx-auto text-bluey flex text-xl md:text-2xl items-center gap-10'>
             <Link className='' href={LINKEDIN_URL} >
@@ -45,11 +45,11 @@ export default function Home() {
 
         </div>
         <div className='mt- flex flex-col absolute bottom-5 items-center justify-center'>
-          <div className='flex flex-col items-center justify-center  text-2xl'>
-            <SlMouse className="text-3xl" />
+          <div className='flex flex-col items-center justify-center text-[#A5A5A5]  text-2xl'>
+            {/* <SlMouse className="text-3xl" /> */}
             <HiOutlineChevronDoubleDown />
           </div>
-          <p className='text-sm text-bluey font-light '>Scroll Down</p>
+          {/* <p className='text-sm text-bluey font-light '>Scroll Down</p> */}
         </div>
       </section>
 
