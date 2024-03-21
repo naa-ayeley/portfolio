@@ -38,7 +38,7 @@ import RestoTesting from "@/components/tabs/resto/resto-testing";
 export const navlinks: Navlink[] = [
     {
         name: "Work",
-        href: "/work",
+        href: "/#work",
     },
     {
         name: "Resume",
@@ -108,6 +108,20 @@ export const projects: Projects = {
             altTitle: "Inventory Management App",
             sub: "UX/UI Case Study",
             tags: ["UI/UX Design", "Case Study"]
+        },
+        {
+            title: "Thenga Website and Extension",
+            img: "/images/mockups/thenga-case.svg",
+            link: "/work/thenga",
+            sub: "UI/UX Case Study",
+            tags: ["UI/UX Design"]
+        },
+        {
+            title: "Resto Restaurant Booking & Pre-order",
+            img: "/images/mockups/resto-case.svg",
+            link: "/work/resto-restaurant",
+            sub: "UI/UX Case Study",
+            tags: ["User Research", "UX Design", "Usability Testing"]
         },
     ],
     studies: [
