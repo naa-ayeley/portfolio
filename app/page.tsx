@@ -10,6 +10,8 @@ import Heading from '@/components/hierarchy/heading';
 import { projects } from '@/lib/data';
 import ProjectCard from '@/components/cards/project-card';
 import Carousel from '@/components/custom-carousel';
+import { Separator } from "@/components/ui/separator";
+
 
 
 export default function Home() {
@@ -53,7 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex pt-16 flex-col gap-4'>
+      <section className='flex pt-16 flex-col gap-4' id="work">
         <Heading
           title='Product Designs'
           sub='Selected Projects'
@@ -75,20 +77,11 @@ export default function Home() {
 
         <Carousel projects={projects.web} />
       </section>
-      
-      <section className='flex pt-16 flex-col gap-4'>
-        <Heading
-          title='Case Studies'
-          sub='Selected Projects'
-        />
-        <div className='grid md:grid-cols-2  gap-x-8 gap-y-8 md:gap-y-12 xl:gap-y-16'>
-          {
-            projects.studies.map((project) => (
-              <ProjectCard key={project.title} variant="studies" project={project} />
-            ))
-          }
-        </div>
+
+      <section className='pt-12'>
+        <Separator />
       </section>
+
     </>
   );
 }
