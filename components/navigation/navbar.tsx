@@ -31,7 +31,7 @@ export default function Navbar() {
     }
 
     return (
-        <section className='w-full container max-sm:px-4 mx-auto'>
+        <section className='w-full container max-sm:px-4 mx-auto sticky top-0 z-10 bg-white'>
             {/* Desktop */}
             <header className="py-4 md:flex hidden items-center gap-8 justify-between ">
                 <Link className='flex items-center gap-4' href='/'>
