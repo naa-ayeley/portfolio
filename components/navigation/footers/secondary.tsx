@@ -16,9 +16,9 @@ const SecondaryFooter = () => {
 
   return (
     <footer className=' relative'>
-      <div className='absolute hidden md:block right-2 md:right-8 top-0 w-[130px] h-[100px] md:w-[200px] md:h-[100px]'>
+      {/* <div className='absolute hidden md:block right-2 md:right-8 top-0 w-[130px] h-[100px] md:w-[200px] md:h-[100px]'>
         <Image src="/images/vectors/planets.svg" fill alt="planets" className='object-contain' />
-      </div>
+      </div> */}
       <div className='md:min-h-[20vh] relative w-full flex flex-col items-center justify-center p-8'>
         <div className='flex flex-col gap-3 md:gap-6 items-center text-center'>
 
