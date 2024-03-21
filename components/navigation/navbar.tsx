@@ -12,6 +12,8 @@ import { OWNER } from '@/lib/constants';
 import { FiMenu, FiX } from 'react-icons/fi'
 import { useState } from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
+// eslint-disable-next-line
+import _ from "lodash"
 
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false)
@@ -26,8 +28,9 @@ export default function Navbar() {
     }
 
 
-    const isActive = (href: string): boolean => {
-        return pathname === href || pathname.startsWith(href)
+    const isActive = (href: string,): boolean => {
+        
+        return pathname === href ||  pathname.startsWith(`${href.replace("#", '')}`)
     }
 
     return (
