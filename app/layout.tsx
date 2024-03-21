@@ -6,6 +6,7 @@ import ModalProvider from '@/providers/modal-provider';
 import Navbar from '@/components/navigation/navbar';
 import Footer from '@/components/navigation/footer';
 import ThengaBottom from './(main)/work/(projects)/thenga/thenga-bottom';
+import InvBottom from './(main)/work/(projects)/inventory-management/inventory-bottom';
 
 export const metadata: Metadata = {
   title: `Home | ${OWNER}`,
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
         </main>
         <ThengaBottom />
+        <InvBottom />
         <Footer  />
       </body>
     </html>

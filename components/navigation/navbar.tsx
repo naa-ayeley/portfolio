@@ -34,9 +34,9 @@ export default function Navbar() {
     }
 
     return (
-        <section className='w-full container max-sm:px-4 mx-auto sticky top-0 z-10 bg-white'>
+        <section className='max-w-full container max-sm:px-4 mx-auto sticky top-0 z-10 bg-white  w-screen left-0'>
             {/* Desktop */}
-            <header className="py-4 md:flex hidden items-center gap-8 justify-between ">
+            <header className="py-4 md:flex hidden items-center gap-8 justify-between container ">
                 <Link className='flex items-center gap-4' href='/'>
                     <Image src="/images/logos/logo.svg" alt="Logo" width={50} height={40} />
                     <div className="flex flex-col gap-">
