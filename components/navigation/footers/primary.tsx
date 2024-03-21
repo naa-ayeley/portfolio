@@ -31,9 +31,9 @@ const PrimaryFooter = () => {
                         </Link>
                     </div>
                 </div>
-                <a href="#" className='mt- flex flex-col gap-2 items-center justify-center'>
-                    <div className='flex flex-col items-center rotate-180   justify-center  text-xl'>
-                        <SlMouse className="text-2xl" />
+                <a href="#" className='mt-8 flex flex-col gap-2 items-center justify-center'>
+                    <div className='flex flex-col items-center rotate-180 text-[#a5a5a5]  justify-center  text-xl'>
+                        {/* <SlMouse className="text-2xl" /> */}
                         <HiOutlineChevronDoubleDown  />
                     </div>
                     <p className='text-xs md:text-sm text-bluey font-light '>Back to the top</p>
