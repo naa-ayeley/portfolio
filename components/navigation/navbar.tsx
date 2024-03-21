@@ -76,7 +76,7 @@ export default function Navbar() {
                 </nav>
             </header>
             {/* Mobile */}
-            <header className='w-full  flex md:hidden items-center justify-between py-4'>
+            <header className='w-full  flex md:hidden items-center justify-between '>
                 <Link href='/'>
                     <Avatar className='w-[50px] h-[50px]'>
                         <AvatarImage src="/images/logos/logo.svg" />
