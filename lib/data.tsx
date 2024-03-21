@@ -140,14 +140,14 @@ export const experience: Experience[] = [
         date: "Oct 2022 - Oct 2023"
     },
     {
-        company: "Pay Up Limited",
-        role: "Design & Marketing",
-        date: "Mar 2021 - Present"
+        company: "Ghana Tech Labs",
+        role: "UI/UX Designer | Freelancer",
+        date: "Jan 2022 - April 2022"
     },
     {
-        company: "Rent Ease (startup)",
-        role: "Design Lead",
-        date: "Jan 2022 - April 2022"
+        company: "Pay Up Limited",
+        role: "Design & Marketing",
+        date: "Mar 2021 - Mar 2022"
     },
     {
         company: "Stanbic Bank",
