@@ -130,9 +130,14 @@ export const projects: Projects = {
 
 export const experience: Experience[] = [
     {
+        company: "Heritors Labs",
+        role: "Product Designer & Marketer",
+        date: "Jan 2024 - Present"
+    },
+    {
         company: "Detosphere Limited",
         role: "Product Designer",
-        date: "Oct 2022 - Present"
+        date: "Oct 2022 - Oct 2023"
     },
     {
         company: "Pay Up Limited",
